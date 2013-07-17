@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  section.content!= typogr(page.html).typogrify()
+
+  section
+    - var projects = _.chain(contents.projects._.directories).map(function(item) {
+    -   return item.index;
+    - }).compact().sortBy(function(item) {
+    -   return -item.date;
+    - }).value();
+
+    ul
+    each project in projects
+      li
+        a.local(href=project.url, title=project.title) #{project.title}
+        | : #{project.metadata.desc}

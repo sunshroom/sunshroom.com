@@ -1,0 +1,16 @@
+{
+    "name": "ascom"
+  , "description": "My homepage built with Wintersmith"
+  , "version": "0.0.1"
+  , "private": true
+  , "engines": {
+    "node": ">=0.10.13"
+  , "npm": "1.3.2"
+  }
+  , "dependencies": {
+    "typogr": "0.5.x"
+  , "lodash": "1.3.1"
+  , "express": "3.x"
+  },
+  "repository": "none"
+}

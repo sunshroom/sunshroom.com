@@ -1,0 +1,59 @@
+!!! 5
+html(lang='en')
+  head
+    block head
+      meta(charset='utf-8')
+      meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+      meta(name='viewport', content='width=device-width')
+      title
+        block title
+          = locals.name
+      block meta
+        meta(property='og:description', content=locals.description)
+        meta(name='description', content=locals.description)
+        meta(name='keywords', content=locals.keywords)
+        meta(property='og:author', content=locals.name)
+        meta(property='og:site_name', content=locals.url)
+        meta(property='og:type', content='website')
+        meta(property='og:url', content='#{locals.url}#{page.url}')
+      link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300')
+      link(rel='stylesheet', href='/css/main.css')
+  body
+    div#body-wrap
+      header#header
+        div.content-wrap
+          block header
+            div.avatar
+              a(href='/')
+                img(src='/img/avatar-1.jpg', title=alt=locals.name + " - " + locals.description, alt=locals.name + " - " + locals.description)
+            h1
+              = locals.name
+            nav#nav-main
+              ul
+                li(class= ('/projects/' == page.url) && 'active')
+                  a(href='/projects/') Projects
+                li(class= ('/biography/' == page.url) && 'active')
+                  a(href='/biography/') Biography
+                li(class= ('/contact/' == page.url) && 'active')
+                  a(href='/contact/') Contact
+      section
+        div.content-wrap
+          block content
+            //- !=contents['summary.md'].html
+            include ../contents/test.html
+      footer
+        div.content-wrap
+          block footer
+            section.copy
+              p &copy; #{ new Date().getFullYear() } #{ locals.name } &mdash; powered by&nbsp;
+                a(href='https://github.com/jnordberg/wintersmith') Wintersmith
+            script(src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+            script.
+              window.jQuery || document.write('<script src="/js/vendor/jquery-1.9.1.min.js"><\\/script>')
+            script.
+              var _gaq=[['_setAccount','#{ locals.analytics }'],['_trackPageview'],['_trackPageLoadTime']];
+              (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+              g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+              s.parentNode.insertBefore(g,s)}(document,'script'));
+            unless _.isEmpty( contents.backgrounds )
+              include backstretch

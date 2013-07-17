@@ -1,0 +1,91 @@
+dev = true
+
+// Nib: https://github.com/visionmedia/nib
+@import "nib"
+
+// Normalize: https://github.com/necolas/normalize.css
+@import "normalize"
+
+// Grid configuration from Fluidity
+grid-width = 960px
+grid-min-width = 320px
+@import "grid"
+
+base-line-height = 34px
+base-font-size = 20px
+@import "rhythm"
+//@import "type"
+
+// Color scheme
+base-color = #222
+color-bg = #FFF
+color-text = base-color
+color-header = base-color + 5%
+color-accent = #269
+
+// Globals
+* html
+  font-size 100% * (base-font-size / base-font-size-default)
+html
+  baseline() // Establish the baseline
+  guide() // Apply a visual reference during development
+  overflow-y scroll // Keeps page centred in all browsers regardless of content height
+
+body
+  font-family 'Lora', serif
+  text-rendering optimizeLegibility
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  clear both
+  margin 0
+  text-rendering optimizeLegibility
+
+h1
+  scale 1
+h2
+  scale 2
+h3
+  scale 3
+h4
+  scale 4
+h5
+  scale 5
+h6
+  scale 6
+
+p
+  margin 0
+
+#body-wrap
+  grid()
+
+#nav-main
+  ul
+    list-style-type none
+    li
+      float left
+      //height 3em
+      padding-left 2em
+      padding-right 2em
+      text-transform uppercase
+      a
+        text-decoration none
+      &:hover
+        background color-bg - 5%
+
+.content-wrap
+  clearfix()
+
+.avatar img
+  width 80px
+  height 80px
+  border-radius(80px)
+.avatar
+  @extend .avatar img
+  border 3px solid color-accent
+  float left

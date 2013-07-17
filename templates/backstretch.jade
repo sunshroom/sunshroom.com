@@ -1,0 +1,10 @@
+append footer
+  - var images = contents.backgrounds._.files.map(function(item) {
+  -   return item.filepath.relative;
+  - }).filter(function(item) {
+  -   return ( _.contains(item, '.jpg') || _.contains(item, '.jpeg') || _.contains(item, '.gif') || _.contains(item, '.png') );
+  - } )
+  - if (locals.backstretch.random) images = _.shuffle(images)
+    script(src='/js/vendor/jquery.backstretch.min.js')
+    script.
+      $.backstretch(['#{ images.join("', '") }'], { fade: #{ locals.backstretch.fade } }, { duration: #{ locals.backstretch.duration } } )

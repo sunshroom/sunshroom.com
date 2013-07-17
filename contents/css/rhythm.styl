@@ -1,0 +1,38 @@
+// Vertical rhythm inspired by Compass
+base-font-size = 16px unless base-font-size is defined // How large would you like your body text to be?
+base-font-size-default = 16px unless base-font-size-default is defined // Browser default
+base-line-height = 24px unless base-line-height is defined // Base line height in px
+base-line-padding = 4px unless base-line-padding is defined // Fudge factor to keep elements from bunching up too closely
+base-scale = 2.6250 1.7500 1.3750 1.1250 1 0.8750 0.8125 0.7500 0.6875 0.6250 // Typographic scale
+dev = false unless dev is defined // Dev mode true or false
+
+// Slide this into the html declaration and you're good to go
+baseline()
+  font-size base-font-size
+  line-height unit(base-line-height / base-font-size, em)
+
+// Guidelines for vertical rhythm debugging
+guide()
+  unless base-line-dev is false
+    background -moz-linear-gradient(top, #BA9B9A 1px, transparent 1px)
+    background-image -webkit-linear-gradient(#BA9B9A 1px, transparent 1px)
+    background-size 100% base-line-height
+
+// Set font-size and line-height according to a vertical rhythm; usage: "scale x" where x is a number from 1 to 10
+scale(n)
+  to-size = base-font-size * base-scale[n - 1] // Target font size in px
+  font-size unit((to-size / base-font-size), em) // Outputs a relative value in em
+  line-height unit((lines(to-size) * base-line-height / to-size), em) // In em, as expected
+  if to-size > base-font-size
+    offset(to-size, lines(to-size))
+
+lines(to-size)
+  lines = ceil(to-size / base-line-height)
+  if lines * base-line-height - to-size < base-line-padding
+    lines = lines + 1
+  return lines
+
+offset(to-size, lines) // Experimental type offsetting
+  factor = ceil(to-size / base-font-size)
+  margin-top (- factor)
+  margin-bottom factor
