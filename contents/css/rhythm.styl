@@ -1,38 +1,68 @@
 // Vertical rhythm inspired by Compass
 base-font-size = 16px unless base-font-size is defined // How large would you like your body text to be?
-base-font-size-default = 16px unless base-font-size-default is defined // Browser default
+base-font-size-default = 16px // Browser default
 base-line-height = 24px unless base-line-height is defined // Base line height in px
+base-line-height-em = unit(base-line-height / base-font-size, em)
 base-line-padding = 4px unless base-line-padding is defined // Fudge factor to keep elements from bunching up too closely
+base-line-padding-lines = 1 unless base-line-padding-lines is defined // How many lines to pad with; sensible options are 1 or 0.5
 base-scale = 2.6250 1.7500 1.3750 1.1250 1 0.8750 0.8125 0.7500 0.6875 0.6250 // Typographic scale
 dev = false unless dev is defined // Dev mode true or false
 
 // Slide this into the html declaration and you're good to go
 baseline()
   font-size base-font-size
-  line-height unit(base-line-height / base-font-size, em)
+  line-height base-line-height-em
 
 // Guidelines for vertical rhythm debugging
 guide()
-  unless base-line-dev is false
+  unless dev is false
     background -moz-linear-gradient(top, #BA9B9A 1px, transparent 1px)
     background-image -webkit-linear-gradient(#BA9B9A 1px, transparent 1px)
     background-size 100% base-line-height
 
 // Set font-size and line-height according to a vertical rhythm; usage: "scale x" where x is a number from 1 to 10
-scale(n)
-  to-size = base-font-size * base-scale[n - 1] // Target font size in px
-  font-size unit((to-size / base-font-size), em) // Outputs a relative value in em
-  line-height unit((lines(to-size) * base-line-height / to-size), em) // In em, as expected
-  if to-size > base-font-size
-    offset(to-size, lines(to-size))
+// Nested scaling is accomplished by specifying the parent scale; usage "scale x y" where y is the parent scale
+scale(n, parent-scale = false)
+  font-size = font-scale(n)
+  if parent-scale
+    local-font-size = font-scale(parent-scale)
+  else
+    local-font-size = base-font-size
+  font-size unit((font-size / local-font-size), em)
+  line-height unit((lines(font-size) * base-line-height / font-size), em)
+  if font-size > base-font-size
+    offset(font-size, lines(font-size))
 
-lines(to-size)
-  lines = ceil(to-size / base-line-height)
-  if lines * base-line-height - to-size < base-line-padding
-    lines = lines + 1
+// Return scaled font size in px
+font-scale(n = 5)
+  return base-font-size * base-scale[n - 1]
+
+// Sort out the number of lines necessary to contain text of a particular size
+lines(font-size, line-height = base-line-height)
+  lines = ceil(font-size / line-height)
+  if lines * line-height - font-size < base-line-padding
+    lines = lines + base-line-padding-lines
   return lines
 
-offset(to-size, lines) // Experimental type offsetting
+// Experimental type offsetting; probably overkill
+offset(to-size, lines)
   factor = ceil(to-size / base-font-size)
+  factor = 0
   margin-top (- factor)
   margin-bottom factor
+
+// Return some multiple of the base line height in em or px, mainly for use in setting margins and offsetting borders
+// Nested scaling is accomplished by specifying the scale of the current element; usage: "space(x,y,z)" e.g. "space(2,,7)"
+space(n = 1, offset = false, this-scale = false)
+  if this-scale
+    local-line-height = unit(base-line-height / font-scale(this-scale), em)
+  else
+    local-line-height = base-line-height-em
+  p(local-line-height)
+  if offset
+    if unit(offset) == "px"
+      return unit((n * local-line-height) - unit((offset / base-font-size), em), em)
+    else
+      return unit((n * local-line-height) - offset, em)
+  else
+    return unit(n * local-line-height, em)

@@ -1,7 +1,9 @@
+// Development mode
 dev = true
 
 // Nib: https://github.com/visionmedia/nib
 @import "nib"
+//global-reset()
 
 // Normalize: https://github.com/necolas/normalize.css
 @import "normalize"
@@ -11,81 +13,76 @@ grid-width = 960px
 grid-min-width = 320px
 @import "grid"
 
-base-line-height = 34px
+base-line-height = 35px
 base-font-size = 20px
 @import "rhythm"
 //@import "type"
 
 // Color scheme
-base-color = #222
-color-bg = #FFF
-color-text = base-color
-color-header = base-color + 5%
-color-accent = #269
+c-base = #222
+c-bg = #FFF
+c-text = c-base
+c-header = c-base + 5%
+c-accent = #269
+c-abbr = #999
+c-ins-bg = #999
+c-pre = #eee
+c-link = blue
+c-link-active = lighten(c-link, 20%)
+c-link-focus = darken(c-link, 20%)
+c-link-hover = lighten(c-link, 10%)
+c-link-visited = darken(c-link, 10%)
 
-// Globals
-* html
-  font-size 100% * (base-font-size / base-font-size-default)
-html
-  baseline() // Establish the baseline
-  guide() // Apply a visual reference during development
-  overflow-y scroll // Keeps page centred in all browsers regardless of content height
 
-body
-  font-family 'Lora', serif
-  text-rendering optimizeLegibility
+@import "global"
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6
-  clear both
-  margin 0
-  text-rendering optimizeLegibility
 
-h1
-  scale 1
-h2
-  scale 2
-h3
-  scale 3
-h4
-  scale 4
-h5
-  scale 5
-h6
-  scale 6
-
-p
-  margin 0
-
+// Layout
 #body-wrap
   grid()
+
+
+#typography
+  .headings
+    grid-space(33%)
+  .headings-example
+    grid-space(23%)
+  .paragraphs
+    grid-space(44%)
+  .lists-1
+    grid-space(33%)
+  .lists-2
+    grid-space(33%)
+  .lists-3
+    grid-space(34%)
+  .blockquotes
+    grid-space(33%)
+  .code-blocks
+    grid-space(33%)
+  .address-blocks
+    grid-space(33%)
+
 
 #nav-main
   ul
     list-style-type none
     li
       float left
-      //height 3em
-      padding-left 2em
-      padding-right 2em
+      padding 0 space()
       text-transform uppercase
       a
         text-decoration none
       &:hover
-        background color-bg - 5%
+        //background c-bg - 5%
 
 .content-wrap
   clearfix()
 
 .avatar img
-  width 80px
-  height 80px
-  border-radius(80px)
+  width space(3, 6px)
+  height space(3, 6px)
+  border-radius(space(3))
 .avatar
   @extend .avatar img
-  border 3px solid color-accent
+  border 3px solid c-accent
   float left

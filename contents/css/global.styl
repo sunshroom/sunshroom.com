@@ -1,0 +1,304 @@
+// Fundamentals
+* html
+  font-size 100% * (base-font-size / base-font-size-default)
+html
+  background c-bg
+  baseline() // Establish the baseline
+  guide() // Apply a visual reference during development
+  overflow-y scroll // Keeps page centred in all browsers regardless of content height
+
+body
+  color c-text
+  font-family 'Lora', serif
+  hyphens(auto)
+  text-rendering optimizeLegibility
+  word-wrap break-word
+  -ms-hyphens auto
+
+
+
+// Links
+a
+  color c-link
+  text-decoration none
+  &:visited
+    color c-link-visited
+  &:hover
+    color c-link-hover
+    outline 0 // Improves readability when focused and also mouse hovered in all browsers people.opera.com/patrickl/experiments/keyboard/test
+    text-decoration underline
+  &:active
+    color c-link-active
+    outline 0
+  &:focus
+    color c-link-focus
+    outline thin dotted
+
+
+
+// Headers
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  clear both
+  margin 0
+  text-rendering optimizeLegibility
+h1
+  scale 1
+h2
+  scale 2
+h3
+  scale 3
+h4
+  scale 4
+h5
+  scale 5
+h6
+  scale 6
+
+
+// Text elements
+p
+  margin 0 auto space()
+  &+p
+    margin-top 0
+    text-indent space(0.5)
+b
+strong
+  font-weight bold
+dfn
+cite
+em
+i
+  font-style italic
+strike
+  text-decoration line-through
+sup
+sub
+  font-size: 75%
+  height 0
+  line-height 0
+  position relative
+  vertical-align baseline
+sup
+  bottom 1ex
+sub
+  top .5ex
+small
+  font-size 75%
+big
+  font-size 125%
+abbr
+acronym
+  border-bottom 1px dotted lighten(c-base, 20%)
+  color c-abbr
+  font-variant small-caps
+  font-weight 600
+  text-transform lowercase
+  &:hover
+    cursor help
+address
+  display block
+  line-height base-line-height
+  margin 0 auto space()
+  &:first-line
+    font-weight bold
+ins
+  background c-ins-bg
+  text-decoration none
+mark
+  background none
+  text-decoration underline
+
+
+
+// Blockquote and quotations
+blockquote
+  display block
+  margin 0 auto space(2)
+  scale 3
+  cite
+    display block
+    margin 0 auto space(3,,7)
+    scale 7 3
+    text-align right
+    &:before
+      content "\2014\00a0"
+    &:after
+      content ""
+  p
+    margin 0 space(0.5)
+    padding 0
+    &:before
+      content "\201C\00a0"
+    &:after
+      content "\00a0\201D"
+q
+  quotes none
+  &:before
+    content "\201C\00a0"
+  &:after
+    content "\00a0\201D"
+
+
+
+// Monospaced
+code
+  background c-pre
+  border 1px solid c-pre - 5%
+  padding 0 space(0.1)
+  word-wrap normal
+pre
+  @extend code
+  display block
+  margin 0 auto space()
+  max-width 100%
+  overflow auto
+  padding space()
+  white-space pre-wrap
+code
+kbd
+tt
+var
+  white-space pre
+
+
+
+// Horizontal rule
+hr
+  background-color c-hr
+  border 0
+  height 1px
+  margin-bottom space()
+
+
+
+
+// Lists and definitions
+ul
+ol
+dl
+  font-family inherit
+  font-size 100%
+  font-style normal
+  font-weight normal
+  margin 0 auto space()
+  padding 0
+ul ul
+ol ol
+ul ol
+ol ul
+dl dl
+  margin 0 space()
+ul
+  list-style disc
+  ul
+    list-style-type circle
+ol
+  list-style decimal
+  ol
+    list-style-type lower-alpha
+dl
+  list-style-type none
+  dt
+    font-weight bold
+  dd
+    margin 0 auto space()
+
+
+
+// Tables and figures
+figure
+  margin 0
+table
+  margin 0 auto space()
+  width 100%
+th
+  font-weight bold
+
+
+
+// Hyphenation
+abbr
+acronym
+blockquote
+code
+dir
+kbd
+listing
+plaintext
+q
+samp
+tt
+var
+xmp
+  hyphens(none)
+  -ms-hyphens none // IE10
+  -o-hyphens none
+
+
+
+// Form elements
+button
+input
+select
+textarea
+  font-size 100% // Corrects font size not being inherited in all browsers
+  margin 0 // Addresses margins set differently in IE6/7, F3/4, S5, Chrome
+  vertical-align baseline // Improves appearance and consistency in all browsers
+  *vertical-align middle // Improves appearance and consistency in all browsers
+button
+input
+  line-height normal // Addresses FF3/4 setting line-height using !important in the UA stylesheet
+  *overflow visible // Corrects inner spacing displayed oddly in IE6/7
+input[type="checkbox"]
+input[type="radio"]
+  box-sizing(border-box) // Addresses box sizing set to content-box in IE8/9
+  padding 0 // Addresses excess padding in IE8/9
+input[type="search"]
+  box-sizing(content-box) // Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof)
+  -webkit-appearance textfield // Addresses appearance set to searchfield in S5, Chrome
+input[type="search"]::-webkit-search-decoration // Corrects inner padding displayed oddly in S5, Chrome on OSX
+  -webkit-appearance none
+button::-moz-focus-inner
+input::-moz-focus-inner // Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+  border 0
+  padding 0
+textarea
+  overflow auto // Removes default vertical scrollbar in IE6/7/8/9
+  padding-left 3px
+  vertical-align top // Improves readability and alignment in all browsers
+  width 98%
+// Reset non-text input types
+input[type="checkbox"]
+input[type="radio"]
+input[type="file"]
+input[type="hidden"]
+input[type="image"]
+input[type="color"]
+  border 0
+  border-radius 0
+  padding 0
+
+
+
+// Multimedia
+img
+  border 0 // From Twenty Twelve
+  height auto // Make sure images are scaled correctly
+  max-width 100% // Adhere to container width
+  -ms-interpolation-mode bicubic // From Twenty Twelve
+audio
+canvas
+video
+  display inline-block // From Twenty Twelve
+audio:not([controls])
+  display none // From Twenty Twelve
+embed
+iframe
+object
+video
+  max-width 100% // Make sure embeds and iframes fit their containers
