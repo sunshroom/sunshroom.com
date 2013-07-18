@@ -38,14 +38,17 @@ html(lang='en')
       section
         div.content-wrap
           block content
-            //- !=contents['summary.md'].html
-            include ../contents/test.html
+            !=contents['summary.md'].html
+            //- include ../contents/test.html
       footer#footer
         div.content-wrap
           block footer
             section.copy
-              p &copy; #{ new Date().getFullYear() } #{ locals.name } &mdash; powered by&nbsp;
+              p &copy;2012&ndash;#{ new Date().getFullYear() } #{ locals.name }. Powered by&nbsp;
                 a(href='https://github.com/jnordberg/wintersmith') Wintersmith
+                .&nbsp;
+                a(href='https://github.com/synapticism/ascom') Source on GitHub
+                .
             script(src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
             script.
               window.jQuery || document.write('<script src="/js/vendor/jquery-1.9.1.min.js"><\\/script>')
