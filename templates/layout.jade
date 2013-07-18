@@ -35,11 +35,11 @@ html(lang='en')
                   a(href='/biography/') Biography
                 li(class= ('/contact/' == page.url) && 'active')
                   a(href='/contact/') Contact
-      section
+      section#main
         div.content-wrap
-          block content
-            !=contents['summary.md'].html
-            //- include ../contents/test.html
+          article
+            block content
+              !=contents['index.md'].html
       footer#footer
         div.content-wrap
           block footer
