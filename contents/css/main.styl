@@ -1,48 +1,69 @@
-// Development mode
-dev = true
-
 // Nib: https://github.com/visionmedia/nib
 @import "nib"
-//global-reset()
 
 // Normalize: https://github.com/necolas/normalize.css
 @import "normalize"
 
-// Grid configuration from Fluidity
+// Simple semantic grid configuration from Fluidity: http://fluiditycss.com/
 grid-width = 960px
 grid-min-width = 320px
 @import "grid"
 
+// Development mode true or false?
+dev = true
+
+// Vertical rhythm inspired by Compass (but mostly original)
 base-line-height = 35px
 base-font-size = 20px
 @import "rhythm"
+
+// Self-explanatory
+@import "colour"
 //@import "type"
-
-// Color scheme
-c-base = #222
-c-bg = #FFF
-c-text = c-base
-c-header = c-base + 5%
-c-accent = #269
-c-abbr = #999
-c-ins-bg = #999
-c-pre = #eee
-c-link = blue
-c-link-active = lighten(c-link, 20%)
-c-link-focus = darken(c-link, 20%)
-c-link-hover = lighten(c-link, 10%)
-c-link-visited = darken(c-link, 10%)
-
-
 @import "global"
-
 
 // Layout
 #body-wrap
   grid()
 
+#header
+  margin space() 0 space()
 
+#nav-main
+  float left
+  ul
+    list-style-type none
+    li
+      float left
+      padding 0 space() 0 0
+      text-transform uppercase
+      a
+        text-decoration none
+      &:hover
+        //background c-bg - 5%
+
+.content-wrap
+  clearfix()
+
+.avatar img
+  border 3px solid c-avatar
+  border-radius(space(3))
+  float left
+  height space(3)
+  margin-right space()
+  width space(3)
+  &:hover
+    border-color c-avatar + 20%
+
+#footer
+  scale 8
+  margin-top space(,,8)
+
+// Temporary test content
 #typography
+  div.content-wrap
+    border 1px solid #999
+    margin 0 space() space(0,2px), 0
   .headings
     grid-space(33%)
   .headings-example
@@ -61,28 +82,3 @@ c-link-visited = darken(c-link, 10%)
     grid-space(33%)
   .address-blocks
     grid-space(33%)
-
-
-#nav-main
-  ul
-    list-style-type none
-    li
-      float left
-      padding 0 space()
-      text-transform uppercase
-      a
-        text-decoration none
-      &:hover
-        //background c-bg - 5%
-
-.content-wrap
-  clearfix()
-
-.avatar img
-  width space(3, 6px)
-  height space(3, 6px)
-  border-radius(space(3))
-.avatar
-  @extend .avatar img
-  border 3px solid c-accent
-  float left
