@@ -14,7 +14,7 @@ html
 
 body
   color c-body
-  font-family 'Lora', serif
+  font-family base-font-body
   hyphens(auto)
   text-rendering optimizeLegibility
   word-wrap break-word
@@ -47,6 +47,7 @@ h3,
 h4,
 h5,
 h6
+  font-family base-font-header
   margin 0
   text-rendering optimizeLegibility
 h1
@@ -170,6 +171,13 @@ kbd
 tt
 var
   white-space pre
+code
+kbd
+pre
+samp
+tt
+var
+  font-family base-font-monospace
 
 
 
@@ -250,6 +258,7 @@ button
 input
 select
 textarea
+  font-family base-font-body
   font-size 100% // Corrects font size not being inherited in all browsers
   margin 0 // Addresses margins set differently in IE6/7, F3/4, S5, Chrome
   vertical-align baseline // Improves appearance and consistency in all browsers

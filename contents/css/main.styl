@@ -1,3 +1,6 @@
+// Development mode true or false?
+dev = false
+
 // Nib: https://github.com/visionmedia/nib
 @import "nib"
 
@@ -9,17 +12,21 @@ grid-width = 960px
 grid-min-width = 320px
 @import "grid"
 
-// Development mode true or false?
-dev = false
-
 // Vertical rhythm inspired by Compass (but mostly original)
 base-line-height = 35px
 base-font-size = 20px
 @import "rhythm"
 
-// Self-explanatory
+// Colour scheme
+//base-color-1 = #0A64A4
 @import "colour"
-//@import "type"
+
+// Type: use pre-defined stacks or define your own here; base-font-body, base-font-header, and base-font-monospace
+base-font-body = stack-open
+base-font-header = unquote('"Paytone One", ' + stack-tahoma) // stack-oxygen
+@import "type"
+
+// Self-explanatory
 @import "global"
 
 // Layout
@@ -28,19 +35,24 @@ base-font-size = 20px
 
 #header
   margin space() 0 space()
+  gradient(white, black)
 
 #nav-main
   float left
   ul
     list-style-type none
+    margin-left space(-0.5)
     li
       float left
-      padding 0 space() 0 0
+      padding 0 space(0.5) 0 space(0.5)
       text-transform uppercase
       a
         text-decoration none
-      &:hover
-        //background c-bg - 5%
+        &:hover
+          text-shadow 1px 1px 3px rgba(0,0,0,0.2)
+          transition text-shadow .5s ease-out
+    .active
+      background #fff
 
 #main article
   margin-left space(4)
@@ -49,7 +61,7 @@ base-font-size = 20px
   clearfix()
 
 .avatar img
-  border 3px solid c-avatar
+  //border 3px solid c-avatar
   border-radius(space(3))
   float left
   height space(3)
@@ -62,7 +74,7 @@ base-font-size = 20px
   scale 8
   margin space(,,8) 0 0 space(4,,8)
 
-// Temporary test content
+// Temporary test content; delete later
 #typography
   .headings
     grid-space(33%)

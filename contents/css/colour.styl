@@ -1,8 +1,15 @@
-// Colour scheme
-c-background      = #fff
-c-body            = #333
+// Base colour definitions
+base-color-1      = #1240AB unless base-color-1 is defined
+base-color-2      = #FF7400 unless base-color-2 is defined
+base-color-3      = #FFD300 unless base-color-3 is defined
+base-color-bg     = #FFFFFF unless base-color-bg is defined
+base-color-body   = #222222 unless base-color-body is defined
 
-c-link            = #119
+// Colour scheme
+c-background      = base-color-bg
+c-body            = base-color-body
+
+c-link            = base-color-1
 c-link-active     = c-link + 75%
 c-link-focus      = c-link - 50%
 c-link-hover      = c-link + 50%
@@ -15,4 +22,4 @@ c-hr              = c-background - 40%
 
 c-header          = c-body + 10%
 
-c-avatar          = c-link - 25%
+c-avatar          = base-color-2

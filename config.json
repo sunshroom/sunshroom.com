@@ -5,6 +5,7 @@
   , "description": "Stray thoughts caught in the spider's web"
   , "keywords": "synaptic, design, development, photography, entrepreneur, identity"
   , "analytics": "UA-XXXXX-X"
+  , "googlewebfonts": "Paytone+One:400,700,400italic,700italic|Open+Sans:400,700"
   , "backstretch": {
       "fade": 500
     , "duration": 3000
