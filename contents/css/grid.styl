@@ -1,7 +1,6 @@
-// Semantic grid from Fluidity: http://fluiditycss.com/
-
-grid-width = 100% unless grid-width is defined
-grid-min-width = 960px unless grid-min-width is defined
+// Semantic grid adapted from Fluidity: http://fluiditycss.com/
+grid-width        ?= 100%
+grid-min-width    ?= 960px
 
 grid(width = grid-width, min-width = grid-min-width)
   position relative

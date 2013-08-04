@@ -4,6 +4,7 @@
   , "name": "Alexander Synaptic"
   , "description": "Stray thoughts caught in the spider's web"
   , "keywords": "synaptic, design, development, photography, entrepreneur, identity"
+  , "source": "https://github.com/synapticism/Synapticism.github.io-generator"
   , "analytics": "UA-XXXXX-X"
   , "googlewebfonts": "Russo+One|Open+Sans:400,700,400italic,700italic"
   , "backstretch": {

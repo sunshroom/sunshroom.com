@@ -6,8 +6,10 @@ An experiment in using [Wintersmith](https://github.com/jnordberg/wintersmith), 
 
 Install [Wintersmith](https://github.com/jnordberg/wintersmith) and [Wintersmith Stylus](https://github.com/jnwng/wintersmith-stylus).
 
-```$ npm install wintersmith -g
-$ npm install wintersmith-stylus -g```
+```
+$ npm install wintersmith -g
+$ npm install wintersmith-stylus -g
+```
 
 Many core settings can be configured by editing `config.json` but you'll need to get your feet wet.
 

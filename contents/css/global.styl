@@ -1,19 +1,18 @@
+// These should all be defined already... in case they are not
+base-font-size ?= 16px
+
 // Fundamentals
 *,
 *:before,
 *:after
   box-sizing(border-box) // Border box all the things
 
-unit(base-font-size, 'num')
 
-p(typeof(base-font-size))
-
-p(base-font-size / 16px)
 
 * html
   font-size 100% * (base-font-size / 16px)
 html
-  background c-background
+  background c-bg
   baseline() // Establish the baseline
   guide() // Apply a visual reference during development
   overflow-y scroll // Keeps page centred in all browsers regardless of content height

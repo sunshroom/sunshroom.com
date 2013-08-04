@@ -1,20 +1,11 @@
-// Base font size (px)
-base-font-size = 18px unless base-font-size is defined
-
-// Base line height (px)
-base-line-height = 28px unless base-line-height is defined
-
-// Fudge factor used while calculating how many lines are required for an element (px)
-base-line-padding = 4px unless base-line-padding is defined
-
-// Set this to 1 for whole line padding and 0.5 for half line padding
-base-line-padding-lines = 1 unless base-line-padding-lines is defined
+dev                       ?= false // Dev mode true or false (activates visual baseline debugging)
+base-font-size            ?= 18px // Base font size (px)
+base-line-height          ?= 28px // Base line height (px)
+base-line-padding         ?= 4px // Fudge factor used while calculating how many lines are required for an element (px)
+base-line-padding-lines   ?= 1 // Set this to 1 for whole line padding and 0.5 for half line padding
 
 // Typographic scale used to calculate all sorts of stuff; keep the 1 in the 5th position and edit everything else to suit
 base-scale = 2.2500 1.7500 1.3750 1.1250 1 0.8750 0.8125 0.7500 0.6875 0.6250
-
-// Dev mode true or false
-dev = false unless dev is defined
 
 // Slide this into the html declaration and you're good to go
 baseline()

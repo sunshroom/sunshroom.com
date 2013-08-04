@@ -1,12 +1,12 @@
 // Base colour definitions
-base-color-1      = #1240AB unless base-color-1 is defined
-base-color-2      = #FF7400 unless base-color-2 is defined
-base-color-3      = #FFD300 unless base-color-3 is defined
-base-color-bg     = #FFFFFF unless base-color-bg is defined
-base-color-body   = #222222 unless base-color-body is defined
+base-color-1      ?= #1240AB
+base-color-2      ?= #FF7400
+base-color-3      ?= #FFD300
+base-color-bg     ?= #FFFFFF
+base-color-body   ?= #222222
 
 // Colour scheme
-c-background      = base-color-bg
+c-bg              = base-color-bg
 c-body            = base-color-body
 
 c-link            = base-color-1
@@ -16,9 +16,9 @@ c-link-hover      = c-link + 40%
 c-link-visited    = c-link - 30%
 
 c-abbr            = c-body + 20%
-c-code            = c-background - 5%
+c-code            = c-bg - 5%
 c-ins             = c-body + 50%
-c-hr              = c-background - 40%
+c-hr              = c-bg - 40%
 
 c-header          = c-body + 10%
 

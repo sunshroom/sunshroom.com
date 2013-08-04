@@ -1,7 +1,7 @@
 {
-    "name": "ascom"
-  , "description": "My homepage built with Wintersmith"
-  , "version": "0.0.1"
+    "name": "Synapticism.github.io-generator"
+  , "description": "A synaptic homepage generator"
+  , "version": "0.0.2"
   , "private": true
   , "engines": {
     "node": ">=0.10.13"
