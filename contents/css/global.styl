@@ -4,6 +4,12 @@
 *:after
   box-sizing(border-box) // Border box all the things
 
+unit(base-font-size, 'num')
+
+p(typeof(base-font-size))
+
+p(base-font-size / 16px)
+
 * html
   font-size 100% * (base-font-size / 16px)
 html
@@ -52,6 +58,10 @@ h6
   text-rendering optimizeLegibility
 h1
   scale 1
+  background-clip text
+  background-color #444
+  color transparent
+  text-shadow 1px 1px 3px rgba(0,0,0,0.4)
 h2
   scale 2
 h3

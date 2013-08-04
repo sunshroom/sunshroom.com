@@ -25,3 +25,9 @@ Photography is a way for me to share my view of the world with others. I shoot w
 In terms of subject matter, I have a strong appreciation for texture, grit, grime, and decay. I explore industrial lands, trainyards, and laneways to expose the underbelly of civilization. I enjoy the juxtaposition of organic and artificial forms, particularly in areas where nature is in the process of reclaiming man-made structures or environments. I want to reveal the secret lives of inanimate objects and tell cryptic stories of forgotten places. I wish to uncover the subtle beauty hidden within ugly scenes of devastation and neglect.
 
 Almost all my images are licensed under the Creative Commons (BY-NC) and require attribution in the form of: “Photo by Alexander Synaptic (synapticism.com).” You must obtain permission for commercial usage.
+
+## Still to come
+
+- Science
+- DJing
+- etc.

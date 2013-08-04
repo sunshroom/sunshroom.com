@@ -1,35 +1,52 @@
-# alexandersynaptic.com
+# A synaptic homepage generator
 
-An experiment in using Wintersmith, a Node-based static site generator, to create a simple personal homepage.
+An experiment in using [Wintersmith](https://github.com/jnordberg/wintersmith), a Node-based static site generator, to create a simple personal homepage hosted at [synapticism.github.io](https://synapticism.github.io).
 
-## Setup
+## Configuration
 
-Many core settings can be configured by editing `config.json` but you'll need to get your feet wet mucking about with the layouts to customize this project for your own use.
+Install [Wintersmith](https://github.com/jnordberg/wintersmith) and [Wintersmith Stylus](https://github.com/jnwng/wintersmith-stylus).
 
-## Projects
+```$ npm install wintersmith -g
+$ npm install wintersmith-stylus -g```
 
-Projects should be included as directories containing an `index.md` file under `./contents/projects/`.
+Many core settings can be configured by editing `config.json` but you'll need to get your feet wet.
 
-### Backstretch
+Preview server available at `localhost:8088` by running `wintersmith preview` from the command line.
 
-Drop any number of images into `contents/img/backgrounds` and tweak the relevant settings in `config.json` to control the background image slideshow.
+## Deployment
 
-## Bugs
+### GitHub Pages
+
+Currently I deploy to my user page at [synapticism.github.io](https://synapticism.github.io). Wintersmith is configurd to output to the actual user page repo (which I then push to publish).
+
+### Heroku
+
+I also experimented with serving the site on Heroku using Express. [More information](http://tlvince.com/wintersmith-on-heroku).
+
+## Features
+
+- Projects: should be included as directories containing an `index.md` file under `./contents/projects/`.
+- Backstretch: drop any number of images into `contents/img/backgrounds` and tweak the relevant settings in `config.json` to control the background image slideshow.
+
+## Known issues
 
 - The vertical rhythm isn't perfect; because it is based on proportional units things can get a little buggy when nesting scaled elements. There are a few imperfect hacks to get around this (read comments in the source).
 
 ## Credits
 
+Not all of these projects are in use but all were interesting to explore and inspirational.
+
 - [Wintersmith](https://github.com/jnordberg/wintersmith): static site generator in Node.
-- Wintersmith-Stylus: plugin to add Stylus support to Wintersmith.
+- [Wintersmith-Stylus](https://github.com/jnwng/wintersmith-stylus): plugin to add Stylus support to Wintersmith.
 - [Fluidity](http://fluiditycss.com/): a minimal framework for Stylus.
 - [Backstretch](https://github.com/srobbin/jquery-backstretch): jQuery plugin for background images.
-- HTML5 Boilerplate: basic bits and pieces to get your project up and running.
-- [Normalize](https://github.com/necolas/normalize.css)
+- [HTML5 Boilerplate](http://html5boilerplate.com/): basic bits and pieces to get your project up and running.
+- [Normalize](https://github.com/necolas/normalize.css): normalize.
 - [Stylus](http://learnboost.github.io/stylus/): CSS preprocessor for Node.
-- [Nib](https://github.com/visionmedia/nib)
-- Google Web Fonts: nice type.
+- [Nib](https://github.com/visionmedia/nib): lightweight framework for Stylus.
+- [Lo-Dash](http://lodash.com/): alternative to underscore.js.
+- [Google Web Fonts](https://www.google.com/fonts/): nice type.
 
 ## License
 
-You are welcome to fork this project and make your own homepage as long as you remove all of my personal content apart from a link back to this GitHub repo (if you like).
+All personal content (including the contents of the biography, projects, and contact folder) are under copyright. Everything else is licensed under the GPL. Fork this project and make your own homepage! Just don't use anything that is clearly about me :)

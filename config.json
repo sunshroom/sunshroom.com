@@ -1,11 +1,11 @@
 {
   "locals": {
-    "url": "alexandersynaptic.com"
+    "url": "synapticism.github.io"
   , "name": "Alexander Synaptic"
   , "description": "Stray thoughts caught in the spider's web"
   , "keywords": "synaptic, design, development, photography, entrepreneur, identity"
   , "analytics": "UA-XXXXX-X"
-  , "googlewebfonts": "Paytone+One:400,700,400italic,700italic|Open+Sans:400,700"
+  , "googlewebfonts": "Russo+One|Open+Sans:400,700,400italic,700italic"
   , "backstretch": {
       "fade": 500
     , "duration": 3000
@@ -29,5 +29,6 @@
     "smartLists": true
   , "smartypants": true
   }
+  , "output": "../Synapticism.github.io"
   , "port": 8088
 }

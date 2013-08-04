@@ -1,0 +1,47 @@
+// === FONT STACKS === //
+
+// - Google Web Fonts: http://www.google.com/webfonts
+// - Build Better Font Stacks: http://www.codestyle.org/css/font-family/BuildBetterCSSFontStacks.shtml
+// - Paul Irish's Bulletproof @font-face syntax: http://mky.be/font-face/bulletproof/
+// - Font Squirrel @font-face generator: http://www.fontsquirrel.com/fontface/generator
+// - 10 Web Font Stacks: http://georgebutler.com/blog/typography/10-definitive-web-font-stacks-for-designers/
+
+
+
+// === WEB SAFE === //
+
+// Body font stacks
+stack-tahoma    = 'Tahoma, "DejaVu Sans", "Lucida Sans", "Lucida Grande", "Bitstream Vera Sans", "Liberation Sans", Verdana, sans-serif'
+stack-corbel    = 'Corbel, Arial, Helvetica, "Nimbus Sans L", "Liberation Sans", sans-serif'
+stack-georgia   = 'Georgia, "Palatino Linotype", Palatino, "URW Palladio L", "Book Antiqua", "Times New Roman", serif'
+
+// Header font stacks
+stack-calibri   = 'Calibri, "DejaVu Sans Condensed", Tahoma, "Lucida Sans", "Lucida Grande", "Bitstream Vera Sans", "Liberation Sans", Verdana, sans-serif'
+stack-cambria   = 'Cambria, Constantia, "URW Palladio L", "Palatino Linotype", Palatino, Georgia, "Book Antiqua", "Times New Roman", serif'
+
+// Monospace stacks
+stack-consolas  = 'Consolas, "Bitstream Vera Sans Mono", "Andale Mono", Monaco, "DejaVu Sans Mono", "Lucida Console", monospace'
+stack-courier   = '"Courier 10 Pitch", Courier, monospace'
+
+
+
+// === GOOGLE WEB FONTS === //
+
+// Body font stacks
+stack-open          = unquote('"Open Sans", '     + stack-tahoma)
+stack-arimo         = unquote('Arimo, '           + stack-corbel)
+stack-pt-serif-body = unquote('"PT Serif", '      + stack-georgia)
+
+// Header font stacks
+stack-signika       = unquote('Signika, '         + stack-calibri)
+stack-cabin         = unquote('Cabin, '           + stack-calibri)
+stack-oxygen        = unquote('Oxygen, '          + stack-calibri)
+stack-pt-serif-head = unquote('"PT Serif", '      + stack-cambria)
+
+
+
+// === FONT STACK DEFAULTS === //
+
+base-font-body      = unquote(stack-georgia) unless base-font-body is defined
+base-font-header    = unquote(stack-cambria) unless base-font-header is defined
+base-font-monospace = unquote(stack-consolas) unless base-font-monospace is defined
