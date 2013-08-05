@@ -21,42 +21,44 @@ html(lang='en')
       link(rel='stylesheet', href='/css/main.css')
   body
     div#body-wrap
-      header#header
-        div.content-wrap
-          block header
-            div.avatar
-              a(href='/')
-                img(src='/img/avatar-1.jpg', title=alt=locals.name + " - " + locals.description, alt=locals.name + " - " + locals.description)
-            h1= locals.name
-            nav#nav-main
-              ul
-                li(class= ('/projects/' == page.url) && 'active')
-                  a(href='/projects/') Projects
-                li(class= ('/biography/' == page.url) && 'active')
-                  a(href='/biography/') Biography
-                li(class= ('/contact/' == page.url) && 'active')
-                  a(href='/contact/') Contact
-      section#main
-        div.content-wrap
-          article
-            block content
-              !=contents['index.md'].html
-      footer#footer
-        div.content-wrap
-          block footer
-            section.copy
-              p &copy;2012&ndash;#{ new Date().getFullYear() } #{ locals.name }. Powered by&nbsp;
-                a(href='https://github.com/jnordberg/wintersmith') Wintersmith
-                .&nbsp;
-                a(href='#{locals.source}') Source on GitHub
-                .
-            script(src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
-            script.
-              window.jQuery || document.write('<script src="/js/vendor/jquery-1.9.1.min.js"><\\/script>')
-            script.
-              var _gaq=[['_setAccount','#{ locals.analytics }'],['_trackPageview'],['_trackPageLoadTime']];
-              (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-              g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-              s.parentNode.insertBefore(g,s)}(document,'script'));
-            unless _.isEmpty( contents.backgrounds )
-              include backstretch
+      div#content-wrap
+        header#header
+          div.content-wrap
+            block header
+              div#avatar
+                a(href='/')
+                  div.avatar
+                    img(src='/img/avatar-1.jpg', title=alt=locals.name + " - " + locals.description, alt=locals.name + " - " + locals.description)
+              h1= locals.name
+              nav#nav-main
+                ul
+                  li(class= ('/projects/' == page.url) && 'active')
+                    a(href='/projects/') Projects
+                  li(class= ('/biography/' == page.url) && 'active')
+                    a(href='/biography/') Biography
+                  li(class= ('/contact/' == page.url) && 'active')
+                    a(href='/contact/') Contact
+        section#main
+          div.content-wrap
+            article
+              block content
+                !=contents['index.md'].html
+        footer#footer
+          div.content-wrap
+            block footer
+              section.copy
+                p &copy;2012&ndash;#{ new Date().getFullYear() } #{ locals.name }. Powered by&nbsp;
+                  a(href='https://github.com/jnordberg/wintersmith') Wintersmith
+                  .&nbsp;
+                  a(href='#{locals.source}') Source on GitHub
+                  .
+              script(src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+              script.
+                window.jQuery || document.write('<script src="/js/vendor/jquery-1.9.1.min.js"><\\/script>')
+              script.
+                var _gaq=[['_setAccount','#{ locals.analytics }'],['_trackPageview'],['_trackPageLoadTime']];
+                (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+                g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+                s.parentNode.insertBefore(g,s)}(document,'script'));
+              unless _.isEmpty( contents.backgrounds )
+                include backstretch

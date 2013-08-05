@@ -43,7 +43,8 @@ node_modules
 
 # Project Specific #
 ####################
-projects
-build
+projects/
+build/
+backgrounds/
 test.html
 main-default.css

@@ -8,13 +8,13 @@ dev = false
 @import "normalize"
 
 // Simple semantic grid configuration from Fluidity: http://fluiditycss.com/
-grid-width = 960px
-grid-min-width = 320px
+grid-min-width    = 320px
+grid-width        = 960px
 @import "grid"
 
 // Vertical rhythm inspired by Compass (but mostly original)
-base-line-height = 35px
-base-font-size = 20px
+base-line-height  = 35px
+base-font-size    = 20px
 @import "rhythm"
 
 // Colour scheme
@@ -22,19 +22,53 @@ base-font-size = 20px
 @import "colour"
 
 // Type: use pre-defined stacks or define your own here; base-font-body, base-font-header, and base-font-monospace
-base-font-body = stack-open
-base-font-header = unquote('"Russo One", ' + stack-tahoma)
+base-font-body    = stack-open
+base-font-header  = unquote('"Russo One", ' + stack-tahoma)
 @import "type"
 
 // Self-explanatory
+base-p-style      = web // Either "web" (spaces between paragraphs) or "book" (no space but indented)
 @import "global"
 
 // Layout
 #body-wrap
   grid()
+  overflow visible
+
+#content-wrap
+  background rgba(c-bg, 0.9)
+  border-radius space()
+  box-sizing border-box
+  grid-space(100%)
+  margin space() 0
+  padding space() space(2)
+
+#avatar
+  left space(-3.5)
+  position absolute
+  z-index 5
+
+.avatar
+  border-radius(space(3))
+  box-shadow inset 0px 0px 25px rgba(0,0,0,0.75)
+  float left
+  height space(3)
+  width space(3)
+  &:hover
+    box-shadow inset 0px 0px 25px rgba(255,255,255,0.5)
+
+.avatar img
+  border-radius(space(3))
+  box-shadow 0px 0px 25px rgba(0,0,0,0.75)
+  height space(3)
+  position relative
+  width space(3)
+  z-index -1
+  &:hover
+    border-color c-avatar + 20%
 
 #header
-  margin space() 0 space()
+  margin 0 0 space()
 
 #nav-main
   float left
@@ -54,31 +88,8 @@ base-font-header = unquote('"Russo One", ' + stack-tahoma)
     .active
       background #fff
 
-#main article
-  margin-left space(4)
-
 .content-wrap
   clearfix()
 
-.avatar
-  border-radius(space(3))
-  box-shadow inset 0px 0px 25px rgba(0,0,0,0.75)
-  float left
-  height space(3)
-  width space(3)
-  margin-right space()
-  &:hover
-    box-shadow inset 0px 0px 25px rgba(255,255,255,0.5)
-
-.avatar img
-  border-radius(space(3))
-  height space(3)
-  position relative
-  width space(3)
-  z-index -1
-  &:hover
-    border-color c-avatar + 20%
-
 #footer
   scale 8
-  margin space(,,8) 0 0 space(4,,8)
