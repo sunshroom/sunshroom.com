@@ -18,7 +18,6 @@ base-font-size    = 20px
 @import "rhythm"
 
 // Colour scheme
-//base-color-1 = #0A64A4
 @import "colour"
 
 // Type: use pre-defined stacks or define your own here; base-font-body, base-font-header, and base-font-monospace
@@ -36,8 +35,10 @@ base-p-style      = web // Either "web" (spaces between paragraphs) or "book" (n
   overflow visible
 
 #content-wrap
-  background rgba(c-bg, 0.9)
+  background rgba(c-body-bg, 0.9)
+  //border 5px dashed #999
   border-radius space()
+  box-shadow inset 0 3px 50px rgba(0,0,0,0.05)
   box-sizing border-box
   grid-space(100%)
   margin space() 0
@@ -46,26 +47,28 @@ base-p-style      = web // Either "web" (spaces between paragraphs) or "book" (n
 #avatar
   left space(-3.5)
   position absolute
-  z-index 5
+  z-index 3
 
 .avatar
   border-radius(space(3))
   box-shadow inset 0px 0px 25px rgba(0,0,0,0.75)
-  float left
   height space(3)
   width space(3)
   &:hover
     box-shadow inset 0px 0px 25px rgba(255,255,255,0.5)
+    transition box-shadow .4s ease-out
 
 .avatar img
   border-radius(space(3))
-  box-shadow 0px 0px 25px rgba(0,0,0,0.75)
+  box-sizing border-box
+  box-shadow 3px 3px 20px rgba(0,0,0,0.7)
   height space(3)
   position relative
   width space(3)
   z-index -1
   &:hover
-    border-color c-avatar + 20%
+    border 5px dashed rgba(128,128,128,0.4)
+    box-shadow 0px 0px 0px
 
 #header
   margin 0 0 space()
@@ -76,20 +79,31 @@ base-p-style      = web // Either "web" (spaces between paragraphs) or "book" (n
     list-style-type none
     margin-left space(-0.5)
     li
+      background #FFFFFF
+      border-radius space(0.25)
+      box-shadow inset 0px -2px 6px rgba(0,0,0,0.1)
       float left
       font-weight bold
       padding 0 space(0.5) 0 space(0.5)
+      text-shadow 1px 1px 3px rgba(255,255,255,0.8)
       text-transform uppercase
+      &:hover
+        background linear-gradient(top, 3% #FFFFFF, rgba(255,255,255,0.1), rgba(0,0,0,0.1))
       a
         text-decoration none
-        &:hover
-          text-shadow 1px 1px 3px rgba(0,0,0,0.2)
-          transition text-shadow .5s ease-out
+    li+li
+      margin-left space(0.25)
     .active
-      background #fff
+      background linear-gradient(top, 3% #FFFFFF, rgba(255,255,255,0.1), rgba(0,0,0,0.1))
+      box-shadow inset 0px 2px 6px rgba(0,0,0,0.2)
+      &:hover
+        background linear-gradient(top, 3% #FFFFFF, rgba(255,255,255,0.15), rgba(0,0,0,0.15))
+        box-shadow inset 0px 2px 6px rgba(0,0,0,0.25)
 
 .content-wrap
   clearfix()
 
 #footer
   scale 8
+  margin space() auto 0
+
