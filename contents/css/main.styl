@@ -5,29 +5,29 @@ dev = false
 @import "nib"
 
 // Normalize: https://github.com/necolas/normalize.css
-@import "normalize"
+@import "_normalize"
 
 // Simple semantic grid configuration from Fluidity: http://fluiditycss.com/
 grid-min-width    = 320px
 grid-width        = 960px
-@import "grid"
+@import "_grid"
 
 // Vertical rhythm inspired by Compass (but mostly original)
 base-line-height  = 35px
 base-font-size    = 20px
-@import "rhythm"
+@import "_rhythm"
 
 // Colour scheme
-@import "colour"
+@import "_colour"
 
 // Type: use pre-defined stacks or define your own here; base-font-body, base-font-header, and base-font-monospace
 base-font-body    = stack-open
 base-font-header  = unquote('"Russo One", ' + stack-tahoma)
-@import "type"
+@import "_type"
 
 // Self-explanatory
 base-p-style      = web // Either "web" (spaces between paragraphs) or "book" (no space but indented)
-@import "global"
+@import "_global"
 
 // Layout
 #body-wrap

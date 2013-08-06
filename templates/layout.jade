@@ -23,7 +23,7 @@ html(lang='en')
     div#body-wrap
       div#content-wrap
         header#header
-          div.content-wrap
+          .content-wrap
             block header
               div#avatar
                 a(href='/', title=locals.name + " - " + locals.description)
@@ -40,12 +40,12 @@ html(lang='en')
                   li(class= ('/contact/' == page.url) && 'active')
                     a(href='/contact/') Contact
         section#main
-          div.content-wrap
+          .content-wrap
             article
               block content
                 !=contents['index.md'].html
         footer#footer
-          div.content-wrap
+          .content-wrap
             block footer
               section.copy
                 p &copy;2012&ndash;#{ new Date().getFullYear() } #{ locals.name }. Powered by&nbsp;
@@ -61,5 +61,5 @@ html(lang='en')
                 (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
                 g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
                 s.parentNode.insertBefore(g,s)}(document,'script'));
-              unless _.isEmpty( contents.backgrounds )
+              unless _.isEmpty(contents.backgrounds)
                 include backstretch

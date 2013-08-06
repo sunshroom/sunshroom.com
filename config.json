@@ -19,9 +19,10 @@
   }
   , "ignore": [
     "**/.DS_Store"
+  , "**/_*.styl"
   ]
   , "plugins": [
-    "wintersmith-stylus"
+    "./node_modules/wintersmith-stylus"
   ]
   , "jade": {
     "pretty": true
@@ -29,6 +30,9 @@
   , "markdown": {
     "smartLists": true
   , "smartypants": true
+  }
+  , "stylus": {
+    "compress": true
   }
   , "output": "../Synapticism.github.io"
   , "port": 8088
