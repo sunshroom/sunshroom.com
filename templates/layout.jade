@@ -26,10 +26,11 @@ html(lang='en')
           div.content-wrap
             block header
               div#avatar
-                a(href='/')
+                a(href='/', title=locals.name + " - " + locals.description)
                   div.avatar
                     img(src='/img/avatar-1.jpg', title=alt=locals.name + " - " + locals.description, alt=locals.name + " - " + locals.description)
-              h1= locals.name
+              a(href='/', title=locals.name + " - " + locals.description)
+                h1= locals.name
               nav#nav-main
                 ul
                   li(class= ('/projects/' == page.url) && 'active')

@@ -72,6 +72,14 @@ base-p-style      = web // Either "web" (spaces between paragraphs) or "book" (n
 
 #header
   margin 0 0 space()
+  a:hover
+    text-decoration none
+  h1:hover
+    background-clip text
+    background-color c-body + 25%
+    color transparent
+    text-shadow 2px 2px 5px rgba(0,0,0,0.3)
+    transition .5s ease-out
 
 #nav-main
   float left
