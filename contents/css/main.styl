@@ -36,9 +36,8 @@ base-p-style      = web // Either "web" (spaces between paragraphs) or "book" (n
 
 #content-wrap
   background rgba(c-body-bg, 0.9)
-  //border 5px dashed #999
   border-radius space()
-  box-shadow inset 0 3px 50px rgba(0,0,0,0.05)
+  box-shadow inset 0 3px 50px rgba(0,0,0,0.05), 0 0px 25px rgba(0,0,0,0.1)
   box-sizing border-box
   grid-space(100%)
   margin space() 0
@@ -51,11 +50,11 @@ base-p-style      = web // Either "web" (spaces between paragraphs) or "book" (n
 
 .avatar
   border-radius(space(3))
-  box-shadow inset 0px 0px 25px rgba(0,0,0,0.75)
+  box-shadow inset 0 4px 10px rgba(0,0,0,0.5), inset 0 -4px 20px rgba(255,255,255,1)
   height space(3)
   width space(3)
   &:hover
-    box-shadow inset 0px 0px 25px rgba(255,255,255,0.5)
+    box-shadow inset 0 -4px 15px rgba(0,0,0,0.75), inset 0 2px 30px rgba(255,255,255,1)
     transition box-shadow .4s ease-out
 
 .avatar img
@@ -66,9 +65,6 @@ base-p-style      = web // Either "web" (spaces between paragraphs) or "book" (n
   position relative
   width space(3)
   z-index -1
-  &:hover
-    border 5px dashed rgba(128,128,128,0.4)
-    box-shadow 0px 0px 0px
 
 #header
   margin 0 0 space()
@@ -115,3 +111,7 @@ base-p-style      = web // Either "web" (spaces between paragraphs) or "book" (n
   scale 8
   margin space() auto 0
 
+// A note about the "partials" method of organization
+// wintersmith-stylus usually parses anything ending in .styl; this means that if you have a bunch of @import statements all those files will also be parsed on their own (e.g. .styl -> .css)
+// This will throw errors when building if you reference variables from one styl file in another without defining defaults
+// The compromise: rename all partials with an underscore and add a new glob pattern matching "**/_*.styl" to the ignore array in config.json
