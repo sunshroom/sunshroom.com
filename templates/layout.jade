@@ -33,12 +33,9 @@ html(lang='en')
                 h1= locals.name
               nav#nav-main
                 ul
-                  li(class= ('/projects/' == page.url) && 'active')
-                    a(href='/projects/') Projects
-                  li(class= ('/biography/' == page.url) && 'active')
-                    a(href='/biography/') Biography
-                  li(class= ('/contact/' == page.url) && 'active')
-                    a(href='/contact/') Contact
+                  for menu in locals.menu
+                    li(class= (menu.url == page.url) && 'active')
+                      a(href=menu.url, title=menu.description) #{ menu.name }
         section#main
           .content-wrap
             article

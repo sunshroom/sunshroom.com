@@ -5,6 +5,28 @@
   , "description": "Stray thoughts caught in the spider's web"
   , "keywords": "synaptic, design, development, photography, entrepreneur, identity"
   , "source": "https://github.com/synapticism/Synapticism.github.io-generator"
+  , "menu": [
+      {
+        "name": "Biography"
+      , "description": "All about me"
+      , "url": "/biography/"
+      }
+    , {
+        "name": "Projects"
+      , "description": "Things I have done"
+      , "url": "/projects/"
+      }
+    , {
+        "name": "Timeline"
+      , "description": "Where I have been"
+      , "url": "/timeline/"
+      }
+    , {
+        "name": "Contact"
+      , "description": "How to reach me"
+      , "url": "/contact/"
+      }
+  ]
   , "analytics": "UA-XXXXX-X"
   , "googlewebfonts": "Russo+One|Open+Sans:400,700,400italic,700italic"
   , "backstretch": {
