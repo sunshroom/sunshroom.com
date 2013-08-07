@@ -1,4 +1,4 @@
-# A synaptic homepage: alexandersynaptic.com
+# A Synaptic Homepage
 
 An experiment in using [Wintersmith](https://github.com/jnordberg/wintersmith), a Node-based static site generator, to create a simple personal homepage hosted on GitHub Pages at [alexandersynaptic.com](http://alexandersynaptic.com).
 
