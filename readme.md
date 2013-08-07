@@ -1,6 +1,6 @@
-# A synaptic homepage generator
+# A synaptic homepage: alexandersynaptic.com
 
-An experiment in using [Wintersmith](https://github.com/jnordberg/wintersmith), a Node-based static site generator, to create a simple personal homepage hosted at [synapticism.github.io](http://synapticism.github.io).
+An experiment in using [Wintersmith](https://github.com/jnordberg/wintersmith), a Node-based static site generator, to create a simple personal homepage hosted on GitHub Pages at [alexandersynaptic.com](http://alexandersynaptic.com).
 
 ## Installation
 
@@ -14,7 +14,7 @@ Preview server available at `localhost:8088` by running `wintersmith preview` fr
 
 ### GitHub Pages
 
-Currently I deploy to my user page at [synapticism.github.io](https://synapticism.github.io). Wintersmith is configurd to output to the actual user page repo (which I then push to publish).
+Currently I deploy to GitHub Pages at [alexandersynaptic.com](http://alexandersynaptic.com). Wintersmith is configurd to output to the actual user page repo (which I then push to publish).
 
 ### Heroku
 

@@ -1,8 +1,8 @@
 {
-    "name": "Synapticism.github.io-generator"
+    "name": "alexandersynaptic.com"
   , "version": "0.0.3"
   , "author": "Alexander Synaptic <alexander@synapticism.com>"
-  , "description": "A synaptic homepage generator"
+  , "description": "A synaptic homepage."
   , "private": true
   , "engines": {
     "node": ">=0.10.13"
@@ -13,6 +13,12 @@
   , "lodash": "1.3.1"
   , "express": "3.x"
   , "wintersmith-stylus": "0.4.0"
+  }
+  , "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-uglify": "~0.2.2"
   }
   , "keywords": [
       "homepage"

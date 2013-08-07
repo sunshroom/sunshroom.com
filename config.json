@@ -1,10 +1,10 @@
 {
   "locals": {
-    "url": "synapticism.github.io"
+    "url": "alexandersynaptic.com"
   , "name": "Alexander Synaptic"
   , "description": "Stray thoughts caught in the spider's web"
   , "keywords": "synaptic, design, development, photography, entrepreneur, identity"
-  , "source": "https://github.com/synapticism/Synapticism.github.io-generator"
+  , "source": "https://github.com/synapticism/alexandersynaptic.com"
   , "menu": [
       {
         "name": "Biography"
