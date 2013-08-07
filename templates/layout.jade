@@ -28,13 +28,13 @@ html(lang='en')
               div#avatar
                 a(href='/', title=locals.name + " - " + locals.description)
                   div.avatar
-                    img(src='/img/avatar-1.jpg', title=alt=locals.name + " - " + locals.description, alt=locals.name + " - " + locals.description)
+                    img(src='/img/avatar.jpg', title=alt=locals.name + " - " + locals.description, alt=locals.name + " - " + locals.description)
               a(href='/', title=locals.name + " - " + locals.description)
                 h1= locals.name
               nav#nav-main
                 ul
-                  for menu in locals.menu
-                    li(class= (menu.url == page.url) && 'active')
+                  each menu in locals.menu
+                    li(class= (menu.url == page.url) ? 'active' : '')
                       a(href=menu.url, title=menu.description) #{ menu.name }
         section#main
           .content-wrap
@@ -52,7 +52,7 @@ html(lang='en')
                   .
               script(src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
               script.
-                window.jQuery || document.write('<script src="/js/vendor/jquery-1.9.1.min.js"><\\/script>')
+                window.jQuery || document.write('<script src="/js/jquery-1.9.1.min.js"><\\/script>')
               script.
                 var _gaq=[['_setAccount','#{ locals.analytics }'],['_trackPageview'],['_trackPageLoadTime']];
                 (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;

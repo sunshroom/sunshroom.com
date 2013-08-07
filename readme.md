@@ -1,15 +1,10 @@
 # A synaptic homepage generator
 
-An experiment in using [Wintersmith](https://github.com/jnordberg/wintersmith), a Node-based static site generator, to create a simple personal homepage hosted at [synapticism.github.io](https://synapticism.github.io).
+An experiment in using [Wintersmith](https://github.com/jnordberg/wintersmith), a Node-based static site generator, to create a simple personal homepage hosted at [synapticism.github.io](http://synapticism.github.io).
 
-## Configuration
+## Installation
 
-Install [Wintersmith](https://github.com/jnordberg/wintersmith) and [Wintersmith Stylus](https://github.com/jnwng/wintersmith-stylus).
-
-```
-$ npm install wintersmith -g
-$ npm install wintersmith-stylus -g
-```
+Install [Wintersmith](https://github.com/jnordberg/wintersmith) with `npm install wintersmith -g`. Next run `npm install` from the directory containing this git repo.
 
 Many core settings can be configured by editing `config.json` but you'll need to get your feet wet.
 

@@ -40,22 +40,21 @@
     , "_": "lodash"
   }
   , "ignore": [
-    "**/.DS_Store"
-  , "**/_*.styl"
+      "**/.DS_Store"
+    , "**/_*.styl"
   ]
   , "plugins": [
-    "./node_modules/wintersmith-stylus"
+      "./node_modules/wintersmith-stylus"
   ]
   , "jade": {
-    "pretty": true
+      "pretty": true
   }
   , "markdown": {
-    "smartLists": true
-  , "smartypants": true
+      "smartLists": true
+    , "smartypants": true
   }
   , "stylus": {
-    "compress": true
+      "compress": true
   }
-  , "output": "../Synapticism.github.io"
   , "port": 8088
 }
