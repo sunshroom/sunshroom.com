@@ -6,6 +6,5 @@ append footer
   - } )
   - if (locals.backstretch.random)
     - images = _.shuffle(images)
-    script(src='/js/jquery.backstretch.min.js')
     script.
       $.backstretch(['/#{ images.join("', '/") }'], { fade: #{ locals.backstretch.fade } }, { duration: #{ locals.backstretch.duration } } )

@@ -2,28 +2,24 @@
 
 An experiment in using [Wintersmith](https://github.com/jnordberg/wintersmith), a Node-based static site generator, to create a simple personal homepage hosted on GitHub Pages at [alexandersynaptic.com](http://alexandersynaptic.com).
 
+This project is still under construction! A lot of this information is inaccurate and the site is not finished nor deployed.
+
 ## Installation
 
-Install [Wintersmith](https://github.com/jnordberg/wintersmith) with `npm install wintersmith -g`. Next run `npm install` from the directory containing this git repo.
+**Requirements**: npm, Bower, Grunt, and Wintersmith. Use `npm install [package] -g` followed by `npm install` and `bower install`. This will install all dependencies specific to this project.
 
-Many core settings can be configured by editing `config.json` but you'll need to get your feet wet.
+Most core settings can be configured by editing `config.json`.
 
 Preview server available at `localhost:8088` by running `wintersmith preview` from the command line.
 
 ## Deployment
 
-### GitHub Pages
-
-Currently I deploy to GitHub Pages at [alexandersynaptic.com](http://alexandersynaptic.com). Wintersmith is configurd to output to the actual user page repo (which I then push to publish).
-
-### Heroku
-
-I also experimented with serving the site on Heroku using Express. [More information](http://tlvince.com/wintersmith-on-heroku).
+Currently I deploy to GitHub Pages at [alexandersynaptic.com](http://alexandersynaptic.com) using `grunt deploy`.
 
 ## Features
 
 - Projects: should be included as directories containing an `index.md` file under `./contents/projects/`.
-- Backstretch: drop any number of images into `contents/img/backgrounds` and tweak the relevant settings in `config.json` to control the background image slideshow.
+- Backstretch: drop any number of images into `contents/backgrounds` and tweak the relevant settings in `config.json` to control the background image slideshow.
 
 ## Known issues
 
@@ -46,4 +42,4 @@ Not all of these projects are in use but all were interesting to explore and ins
 
 ## License
 
-All personal content (including the contents of the biography, projects, and contact folder) are under copyright. Everything else is licensed under the GPL. Fork this project and make your own homepage! Just don't use anything that is clearly about me :)
+Since this is my personal homepage the contents are under copyright. The code itself is released under the GPL however. Sooner or later I may get around to making a bare bones template that you can modify for your own Wintersmith projects. In the meantime feel free to copy anything that isn't content (which includes all .md files and associated images).

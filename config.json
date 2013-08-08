@@ -1,6 +1,7 @@
 {
   "locals": {
-    "url": "alexandersynaptic.com"
+    "version": "0.0.4"
+  , "url": "alexandersynaptic.com"
   , "name": "Alexander Synaptic"
   , "description": "Stray thoughts caught in the spider's web"
   , "keywords": "synaptic, design, development, photography, entrepreneur, identity"
@@ -56,5 +57,6 @@
   , "stylus": {
       "compress": true
   }
+  , "clean": true
   , "port": 8088
 }
