@@ -3,6 +3,7 @@ module.exports = function(grunt) {
   // Load plugins
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -12,8 +13,8 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['preview']);
   grunt.registerTask('build', ['clean', 'concat', 'stylus', 'wintersmith:build']);
   grunt.registerTask('preview', ['build', 'wintersmith:preview']);
-  grunt.registerTask('test', ['build', 'jshint:dev']);
-  grunt.registerTask('deploy', ['build', 'jshint:prod', 'uglify:prod']); // , 'gh-pages'
+  grunt.registerTask('test', ['jshint:dev']);
+  grunt.registerTask('deploy', ['build', 'cssmin', 'uglify']); // , 'gh-pages'
 
   var jsFiles = [
     'bower_components/jquery/jquery.js'
@@ -22,7 +23,22 @@ module.exports = function(grunt) {
 
   // Project configuration
   grunt.initConfig({
+
     pkg: grunt.file.readJSON('package.json')
+
+  , clean: ['build']
+
+  , concat: {
+      'contents/js/main.js': jsFiles
+    }
+
+  , stylus: {
+      options: {
+        compress: false
+      }
+    , 'contents/css/main.css': 'contents/css/src/main.styl'
+    }
+
   , wintersmith: {
       build: {}
     , preview: {
@@ -31,35 +47,35 @@ module.exports = function(grunt) {
         }
       }
     }
-  , clean: ['build']
-  , concat: {
-      'contents/js/main.js': jsFiles
-    }
-  , stylus: {
-      options: {
-        compress: false
-      }
-    , 'contents/css/main.css': 'contents/css/src/main.styl'
-    }
-    // To do: lint main.js; currently it's a bloodbath
+
+    // Testing
   , jshint: {
       options: {
         laxcomma: true
       }
+      // To do: lint main.js; currently it's a bloodbath
     , dev: ['Gruntfile.js']
     , prod: ['Gruntfile.js']
     }
-  , uglify: {
-      prod: {
-        options: {
-          banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-        , report: 'min',
-        }
-      , files: {
-          'build/js/main.js': jsFiles
-        }
+
+    // Packaging
+  , cssmin: {
+      options: {
+        banner: '/*! <%= pkg.name %> <%= pkg.version %> <%= grunt.template.today("yyyy-mm-dd") %> */'
+      , report: 'min'
       }
+    , 'build/css/main.css': 'contents/css/main.css'
     }
+
+  , uglify: {
+      options: {
+        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+      , report: 'min'
+      }
+    , 'build/js/main.js': jsFiles
+    }
+
+    // Deployment
   , 'gh-pages': {
       options: {
         base: 'build'
