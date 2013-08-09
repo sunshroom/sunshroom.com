@@ -3,28 +3,26 @@ module.exports = function(grunt) {
   // Load plugins
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-gh-pages');
   grunt.loadNpmTasks('grunt-wintersmith');
 
-  grunt.loadNpmTasks('grunt-contrib-copy');
-
-  // Default task(s)
-  grunt.registerTask('default', ['uglify']);
-  grunt.registerTask('preview', ['concat', 'wintersmith:preview'])
-  grunt.registerTask('build', ['clean', 'wintersmith:build', 'uglify'])
-  grunt.registerTask('deploy', ['build', 'gh-pages'])
+  grunt.registerTask('default', ['preview']);
+  grunt.registerTask('build', ['clean', 'concat', 'stylus', 'wintersmith:build']);
+  grunt.registerTask('preview', ['build', 'wintersmith:preview']);
+  grunt.registerTask('test', ['build', 'jshint:dev']);
+  grunt.registerTask('deploy', ['build', 'jshint:prod', 'uglify:prod']); // , 'gh-pages'
 
   var jsFiles = [
     'bower_components/jquery/jquery.js'
   , 'bower_components/jquery-backstretch/jquery.backstretch.js'
-  ]
+  ];
 
   // Project configuration
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json')
-
-    // Tested, working
   , wintersmith: {
       build: {}
     , preview: {
@@ -35,13 +33,24 @@ module.exports = function(grunt) {
     }
   , clean: ['build']
   , concat: {
-      development: {
-        src: jsFiles,
-        dest: 'contents/js/main.js'
+      'contents/js/main.js': jsFiles
+    }
+  , stylus: {
+      options: {
+        compress: false
       }
+    , 'contents/css/main.css': 'contents/css/src/main.styl'
+    }
+    // To do: lint main.js; currently it's a bloodbath
+  , jshint: {
+      options: {
+        laxcomma: true
+      }
+    , dev: ['Gruntfile.js']
+    , prod: ['Gruntfile.js']
     }
   , uglify: {
-      production: {
+      prod: {
         options: {
           banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
         , report: 'min',
@@ -60,5 +69,4 @@ module.exports = function(grunt) {
     }
 
   });
-
 };

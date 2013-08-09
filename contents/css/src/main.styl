@@ -1,11 +1,17 @@
 // Development mode true or false?
 dev = false
 
+// Base variables
+base-font-family  = sans-serif
+base-font-size    = 20px
+base-line-height  = 35px
+indent-amount     = unit(base-line-height / base-font-size, em)
+
 // Nib: https://github.com/visionmedia/nib
 @import "nib"
 
 // Normalize: https://github.com/necolas/normalize.css
-@import "_normalize"
+@import "../../../bower_components/normalize.styl/normalize.styl"
 
 // Simple semantic grid configuration from Fluidity: http://fluiditycss.com/
 grid-min-width    = 320px
@@ -13,8 +19,6 @@ grid-width        = 960px
 @import "_grid"
 
 // Vertical rhythm inspired by Compass (but mostly original)
-base-line-height  = 35px
-base-font-size    = 20px
 @import "_rhythm"
 
 // Colour scheme
@@ -109,8 +113,3 @@ base-p-style      = web // Either "web" (spaces between paragraphs) or "book" (n
 #footer
   scale 8
   margin space() auto 0
-
-// A note about the "partials" method of organization
-// wintersmith-stylus usually parses anything ending in .styl; this means that if you have a bunch of @import statements all those files will also be parsed on their own (e.g. .styl -> .css)
-// This will throw errors when building if you reference variables from one styl file in another without defining defaults
-// The compromise: rename all partials with an underscore and add a new glob pattern matching "**/_*.styl" to the ignore array in config.json
