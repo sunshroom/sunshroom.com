@@ -10,11 +10,11 @@ This project is still under construction! A lot of this information is inaccurat
 
 Most core settings can be configured by editing `config.json`.
 
-Preview server available at `localhost:8088` by running `wintersmith preview` from the command line.
+Preview server available at `localhost:8088` by running `grunt preview` from the command line.
 
 ## Deployment
 
-Currently I deploy to GitHub Pages at [alexandersynaptic.com](http://alexandersynaptic.com) using `grunt deploy`.
+Currently I plan to deploy to GitHub Pages at [alexandersynaptic.com](http://alexandersynaptic.com) using `grunt deploy`.
 
 ## Features
 
