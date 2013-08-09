@@ -24,13 +24,14 @@ footer
 section
   section()
 
-grid-space(width)
+grid-space(width, spacing = true)
   display block
   position relative
   float left
   height 100%
-  margin 0
-  padding 0
+  unless spacing is false
+    margin 0
+    padding 0
   box-sizing border-box
   width width
 

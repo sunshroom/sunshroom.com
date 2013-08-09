@@ -3,6 +3,7 @@ module.exports = function(grunt) {
   // Load plugins
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-stylus');
@@ -49,6 +50,25 @@ module.exports = function(grunt) {
     }
 
     // Testing
+  , csslint: {
+      options: { // csslint is cranky and needlessly opinionated: http://2002-2012.mattwilcox.net/archive/entry/id/1054/
+        'adjoining-classes': false
+      , 'box-sizing': false
+      , 'compatible-vendor-prefixes': false // Throwing errors for ancient vendor prefixes
+      , 'fallback-colors': false
+      , 'floats': false
+      , 'font-sizes': false
+      , 'ids': false
+      , 'outline-none': false
+      , 'qualified-headings': false
+      , 'star-property-hack': false
+      , 'unique-headings': false
+      , 'universal-selector': false
+      , 'unqualified-attributes': false
+      }
+    , src: ['contents/css/*.css']
+    }
+
   , jshint: {
       options: {
         laxcomma: true
