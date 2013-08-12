@@ -1,5 +1,5 @@
 append footer
-  - var images = contents.backgrounds._.files.map(function(item) {
+  - var images = contents.img.backgrounds._.files.map(function(item) {
   -   return item.filepath.relative;
   - }).filter(function(item) {
   -   return ( _.contains(item, '.jpg') || _.contains(item, '.jpeg') || _.contains(item, '.gif') || _.contains(item, '.png') );

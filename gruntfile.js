@@ -21,7 +21,8 @@ module.exports = function(grunt) {
   var jsFiles = [
     'bower_components/jquery/jquery.js'
   , 'bower_components/jquery-backstretch/jquery.backstretch.js'
-  ];
+  ]
+    , defaultBanner = '/*! <%= pkg.name %> <%= pkg.version %> <%= grunt.template.today("yyyy-mm-dd") %> */\n';
 
   // Project configuration
   grunt.initConfig({
@@ -37,7 +38,10 @@ module.exports = function(grunt) {
 
   , stylus: {
       options: {
-        compress: false
+        banner: defaultBanner
+      , compress: false
+      //, 'include css': true
+      //, linenos: true
       }
     , 'contents/css/main.css': 'contents/css/src/main.styl'
     }
@@ -53,38 +57,19 @@ module.exports = function(grunt) {
 
     // Testing
   , watch: {
-      options: {
-        livereload: true
-      },
-      stylus: {
-          files: ['contents/css/src/*.styl'],
-          tasks: ['stylus'],
-          options: {
-              livereload: false
-          }
-      },
-      asset_javascript: {
-          files: jsFiles,
-          tasks: ['concat'],
-          options: {
-              livereload: false
-          }
-      },
-      markdown: {
-        files: ['build/**/*.md']
+      // Livereload when build changes
+      livereload: {
+        options: {
+          livereload: true
+        }
+      , files: ['build/**/*']
+      }
+      // Build when source files change
+    , build: {
+        files: ['contents/css/src/*.styl', 'contents/**/*.md', 'templates/**/*.jade', 'contents/img/**', jsFiles]
       , tasks: ['build']
       }
-      javascript: {
-        files: ['build/js/*.js']
-      },
-      css: {
-        files: ['build/css/*.css']
-      },
-      html: {
-        files: ['build/**/*.html']
-      }
     }
-
 
   , csslint: {
       options: { // CSS Lint is cranky and needlessly opinionated: http://2002-2012.mattwilcox.net/archive/entry/id/1054/
@@ -117,7 +102,7 @@ module.exports = function(grunt) {
     // Packaging
   , cssmin: {
       options: {
-        banner: '/*! <%= pkg.name %> <%= pkg.version %> <%= grunt.template.today("yyyy-mm-dd") %> */'
+        banner: defaultBanner
       , report: 'min'
       }
     , 'build/css/main.css': 'contents/css/main.css'
@@ -125,7 +110,7 @@ module.exports = function(grunt) {
 
   , uglify: {
       options: {
-        banner: '/*! <%= pkg.name %> <%= pkg.version %> <%= grunt.template.today("yyyy-mm-dd") %> */'
+        banner: defaultBanner
       , report: 'min'
       }
     , 'build/js/main.js': jsFiles

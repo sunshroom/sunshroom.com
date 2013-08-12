@@ -1,3 +1,4 @@
+/*! alexandersynaptic.com 0.0.4 2013-08-12 */
 /* normalize.css v2.1.2/v1.1.2 | MIT License | git.io/normalize */
 article,
 aside,
@@ -188,7 +189,7 @@ section {
   box-sizing: border-box;
 }
 * html {
-  font-size: 125%;
+  font-size: 112.5%;
 }
 html {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #eee), color-stop(1, #dedede));
@@ -197,8 +198,8 @@ html {
   background: -o-linear-gradient(top, #eee 0, #dedede 100%);
   background: -ms-linear-gradient(top, #eee 0, #dedede 100%);
   background: linear-gradient(top, #eee 0, #dedede 100%);
-  font-size: 20px;
-  line-height: 1.75em;
+  font-size: 18px;
+  line-height: 1.7777777777777777em;
   overflow-y: scroll;
 }
 body {
@@ -229,7 +230,7 @@ a:hover {
   text-decoration: underline;
 }
 a:active {
-  color: #9ccfe3;
+  color: #84c3dc;
   outline: 0;
 }
 a:focus {
@@ -248,7 +249,7 @@ h6 {
 }
 h1 {
   font-size: 2.25em;
-  line-height: 1.5555555555555556em;
+  line-height: 1.5802469135802468em;
   -webkit-background-clip: text;
   background-color: #434343;
   color: transparent;
@@ -256,28 +257,28 @@ h1 {
 }
 h2 {
   font-size: 1.75em;
-  line-height: 2em;
+  line-height: 2.0317460317460316em;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 h3 {
   font-size: 1.375em;
-  line-height: 1.2727272727272727em;
+  line-height: 1.292929292929293em;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
 h4 {
   font-size: 1.125em;
-  line-height: 1.5555555555555556em;
+  line-height: 1.5802469135802468em;
 }
 h5 {
   font-size: 1em;
-  line-height: 1.75em;
+  line-height: 1.7777777777777777em;
 }
 h6 {
   font-size: 0.875em;
-  line-height: 2em;
+  line-height: 2.0317460317460316em;
 }
 p {
-  margin: 0 auto 1.75em;
+  margin: 0 auto 1.7777777777777777em;
 }
 b,
 strong {
@@ -329,8 +330,8 @@ acronym:hover {
 }
 address {
   display: block;
-  line-height: 35px;
-  margin: 0 auto 1.75em;
+  line-height: 32px;
+  margin: 0 auto 1.7777777777777777em;
 }
 address:first-line {
   font-weight: bold;
@@ -345,13 +346,13 @@ mark {
 }
 blockquote {
   display: block;
-  margin: 0 auto 1.2727272727272727em;
+  margin: 0 auto 1.292929292929293em;
   font-size: 1.375em;
-  line-height: 1.2727272727272727em;
+  line-height: 1.292929292929293em;
 }
 blockquote cite {
   font-size: 0.5909090909090909em;
-  line-height: 2.1538461538461537em;
+  line-height: 2.1880341880341883em;
   display: block;
   text-align: right;
 }
@@ -362,7 +363,7 @@ blockquote cite:after {
   content: "";
 }
 blockquote p {
-  margin: 0 0.875em;
+  margin: 0 0.8888888888888888em;
   padding: 0;
 }
 blockquote p:before {
@@ -386,12 +387,12 @@ pre {
   border: 1px solid #dadada;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  padding: 0 0.2625em;
+  padding: 0 0.26666666666666666em;
   word-wrap: normal;
 }
 pre {
   display: block;
-  margin: 0 auto 1.65em;
+  margin: 0 auto 1.6666666666666665em;
   max-width: 100%;
   overflow: auto;
   white-space: pre-wrap;
@@ -414,7 +415,7 @@ hr {
   background-color: #999;
   border: 0;
   height: 1px;
-  margin-bottom: 1.75em;
+  margin-bottom: 1.7777777777777777em;
 }
 ul,
 ol,
@@ -423,7 +424,7 @@ dl {
   font-size: 100%;
   font-style: normal;
   font-weight: normal;
-  margin: 0 auto 1.75em;
+  margin: 0 auto 1.7777777777777777em;
   padding: 0;
 }
 ul ul,
@@ -431,7 +432,7 @@ ol ol,
 ul ol,
 ol ul,
 dl dl {
-  margin: 0 1.75em;
+  margin: 0 1.7777777777777777em;
 }
 ul {
   list-style: disc;
@@ -452,13 +453,13 @@ dl dt {
   font-weight: bold;
 }
 dl dd {
-  margin: 0 auto 1.75em;
+  margin: 0 auto 1.7777777777777777em;
 }
 figure {
   margin: 0;
 }
 table {
-  margin: 0 auto 1.75em;
+  margin: 0 auto 1.7777777777777777em;
   width: 100%;
 }
 th {
@@ -564,8 +565,8 @@ video {
 }
 .frame {
   background: rgba(255,255,255,0.9);
-  -webkit-border-radius: 1.75em;
-  border-radius: 1.75em;
+  -webkit-border-radius: 1.7777777777777777em;
+  border-radius: 1.7777777777777777em;
   -webkit-box-shadow: inset 0 3px 50px rgba(0,0,0,0.05), 0 0 25px rgba(0,0,0,0.1);
   box-shadow: inset 0 3px 50px rgba(0,0,0,0.05), 0 0 25px rgba(0,0,0,0.1);
   display: block;
@@ -576,23 +577,23 @@ video {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  margin: 1.75em 0;
+  margin: 1.7777777777777777em 0;
 }
 .contents {
-  padding: 1.75em 3.5em;
+  padding: 1.7777777777777777em 3.5555555555555554em;
 }
 .avatar-wrap {
-  left: -6.125em;
+  left: -6.222222222222221em;
   position: absolute;
   z-index: 3;
 }
 .avatar {
-  -webkit-border-radius: 5.25em;
-  border-radius: 5.25em;
+  -webkit-border-radius: 5.333333333333333em;
+  border-radius: 5.333333333333333em;
   -webkit-box-shadow: inset 0 4px 10px rgba(0,0,0,0.5), inset 0 -4px 20px #fff;
   box-shadow: inset 0 4px 10px rgba(0,0,0,0.5), inset 0 -4px 20px #fff;
-  height: 5.25em;
-  width: 5.25em;
+  height: 5.333333333333333em;
+  width: 5.333333333333333em;
 }
 .avatar:hover {
   -webkit-box-shadow: inset 0 -4px 15px rgba(0,0,0,0.75), inset 0 2px 30px #fff;
@@ -604,20 +605,20 @@ video {
   transition: box-shadow 0.4s ease-out;
 }
 .avatar img {
-  -webkit-border-radius: 5.25em;
-  border-radius: 5.25em;
+  -webkit-border-radius: 5.333333333333333em;
+  border-radius: 5.333333333333333em;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-box-shadow: 3px 3px 20px rgba(0,0,0,0.7);
   box-shadow: 3px 3px 20px rgba(0,0,0,0.7);
-  height: 5.25em;
+  height: 5.333333333333333em;
   position: relative;
-  width: 5.25em;
+  width: 5.333333333333333em;
   z-index: -1;
 }
 .contents>header {
-  margin: 0 0 1.3125em;
+  margin: 0 0 1.3333333333333333em;
 }
 .contents>header a:hover {
   text-decoration: none;
@@ -638,18 +639,18 @@ video {
 }
 .contents>header nav ul {
   list-style-type: none;
-  margin-left: -1.3125em;
+  margin-left: -1.3333333333333333em;
 }
 .contents>header nav ul li {
   background: #fff;
-  -webkit-border-radius: 0.4375em;
-  border-radius: 0.4375em;
+  -webkit-border-radius: 0.4444444444444444em;
+  border-radius: 0.4444444444444444em;
   -webkit-box-shadow: inset 0 -2px 6px rgba(0,0,0,0.1);
   box-shadow: inset 0 -2px 6px rgba(0,0,0,0.1);
   float: left;
   font-weight: bold;
-  margin: 0 0 0.4375em 0.4375em;
-  padding: 0 0.875em 0 0.875em;
+  margin: 0 0 0.4444444444444444em 0.4444444444444444em;
+  padding: 0 0.8888888888888888em 0 0.8888888888888888em;
   text-shadow: 1px 1px 3px rgba(255,255,255,0.8);
   text-transform: uppercase;
 }
@@ -697,6 +698,6 @@ video {
 }
 .contents>footer {
   font-size: 0.75em;
-  line-height: 2.3333333333333335em;
-  margin: 1.75em auto 0;
+  line-height: 2.3703703703703702em;
+  margin: 1.7777777777777777em auto 0;
 }
