@@ -8,6 +8,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-gh-pages');
   grunt.loadNpmTasks('grunt-wintersmith');
 
@@ -27,6 +28,7 @@ module.exports = function(grunt) {
 
     pkg: grunt.file.readJSON('package.json')
 
+    // Build
   , clean: ['build']
 
   , concat: {
@@ -50,8 +52,42 @@ module.exports = function(grunt) {
     }
 
     // Testing
+  , watch: {
+      options: {
+        livereload: true
+      },
+      stylus: {
+          files: ['contents/css/src/*.styl'],
+          tasks: ['stylus'],
+          options: {
+              livereload: false
+          }
+      },
+      asset_javascript: {
+          files: jsFiles,
+          tasks: ['concat'],
+          options: {
+              livereload: false
+          }
+      },
+      markdown: {
+        files: ['build/**/*.md']
+      , tasks: ['build']
+      }
+      javascript: {
+        files: ['build/js/*.js']
+      },
+      css: {
+        files: ['build/css/*.css']
+      },
+      html: {
+        files: ['build/**/*.html']
+      }
+    }
+
+
   , csslint: {
-      options: { // csslint is cranky and needlessly opinionated: http://2002-2012.mattwilcox.net/archive/entry/id/1054/
+      options: { // CSS Lint is cranky and needlessly opinionated: http://2002-2012.mattwilcox.net/archive/entry/id/1054/
         'adjoining-classes': false
       , 'box-sizing': false
       , 'compatible-vendor-prefixes': false // Throwing errors for ancient vendor prefixes
@@ -89,7 +125,7 @@ module.exports = function(grunt) {
 
   , uglify: {
       options: {
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+        banner: '/*! <%= pkg.name %> <%= pkg.version %> <%= grunt.template.today("yyyy-mm-dd") %> */'
       , report: 'min'
       }
     , 'build/js/main.js': jsFiles
