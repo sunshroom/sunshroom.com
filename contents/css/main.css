@@ -1,4 +1,4 @@
-/*! alexandersynaptic.com 0.0.4 2013-08-12 */
+/*! alexandersynaptic.com 0.0.4 2013-08-13 */
 /* normalize.css v2.1.2/v1.1.2 | MIT License | git.io/normalize */
 article,
 aside,
@@ -192,12 +192,12 @@ section {
   font-size: 112.5%;
 }
 html {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #eee), color-stop(1, #dedede));
-  background: -webkit-linear-gradient(top, #eee 0, #dedede 100%);
-  background: -moz-linear-gradient(top, #eee 0, #dedede 100%);
-  background: -o-linear-gradient(top, #eee 0, #dedede 100%);
-  background: -ms-linear-gradient(top, #eee 0, #dedede 100%);
-  background: linear-gradient(top, #eee 0, #dedede 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #eee), color-stop(0.33333333333333326, #dcdcdc), color-stop(1, #eee));
+  background: -webkit-linear-gradient(top, #eee 0, #dcdcdc 33.33333333333333%, #eee 100%);
+  background: -moz-linear-gradient(top, #eee 0, #dcdcdc 33.33333333333333%, #eee 100%);
+  background: -o-linear-gradient(top, #eee 0, #dcdcdc 33.33333333333333%, #eee 100%);
+  background: -ms-linear-gradient(top, #eee 0, #dcdcdc 33.33333333333333%, #eee 100%);
+  background: linear-gradient(top, #eee 0, #dcdcdc 33.33333333333333%, #eee 100%);
   font-size: 18px;
   line-height: 1.7777777777777777em;
   overflow-y: scroll;

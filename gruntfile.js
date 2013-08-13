@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
 
-  // Load plugins
+  // Load plugins, register tasks, and define a few useful variables
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-csslint');
@@ -9,13 +9,14 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-express');
   grunt.loadNpmTasks('grunt-gh-pages');
   grunt.loadNpmTasks('grunt-wintersmith');
 
   grunt.registerTask('default', ['preview']);
-  grunt.registerTask('build', ['clean', 'concat', 'stylus', 'wintersmith:build']);
-  grunt.registerTask('preview', ['build', 'wintersmith:preview']);
-  grunt.registerTask('test', ['jshint:dev']);
+  grunt.registerTask('build', ['clean', 'concat', 'stylus', 'wintersmith']);
+  grunt.registerTask('preview', ['build', 'express', 'watch']);
+  grunt.registerTask('test', ['jshint:dev']); // Not very much here so far; CSS Lint not yet integrated
   grunt.registerTask('deploy', ['build', 'cssmin', 'uglify']); // , 'gh-pages'
 
   var jsFiles = [
@@ -24,12 +25,12 @@ module.exports = function(grunt) {
   ]
     , defaultBanner = '/*! <%= pkg.name %> <%= pkg.version %> <%= grunt.template.today("yyyy-mm-dd") %> */\n';
 
-  // Project configuration
+  // === CONFIGURATION === //
   grunt.initConfig({
 
     pkg: grunt.file.readJSON('package.json')
 
-    // Build
+    // === BUILD === //
   , clean: ['build']
 
   , concat: {
@@ -48,29 +49,29 @@ module.exports = function(grunt) {
 
   , wintersmith: {
       build: {}
-    , preview: {
+    }
+
+    // === PREVIEW === //
+  , express: {
+      server: {
         options: {
-          action: 'preview'
+          bases: 'build'
+        , livereload: true
+        , port: 8088
         }
       }
     }
 
-    // Testing
+    // === WATCH === //
   , watch: {
-      // Livereload when build changes
-      livereload: {
-        options: {
-          livereload: true
-        }
-      , files: ['build/**/*']
-      }
-      // Build when source files change
-    , build: {
+      // Trigger build when source files change
+      build: {
         files: ['contents/css/src/*.styl', 'contents/**/*.md', 'templates/**/*.jade', 'contents/img/**', jsFiles]
       , tasks: ['build']
       }
     }
 
+    // === TESTING === //
   , csslint: {
       options: { // CSS Lint is cranky and needlessly opinionated: http://2002-2012.mattwilcox.net/archive/entry/id/1054/
         'adjoining-classes': false
@@ -94,12 +95,11 @@ module.exports = function(grunt) {
       options: {
         laxcomma: true
       }
-      // To do: lint main.js; currently it's a bloodbath
-    , dev: ['Gruntfile.js']
+    , dev: ['Gruntfile.js'] // To do: lint main.js; currently it's a bloodbath
     , prod: ['Gruntfile.js']
     }
 
-    // Packaging
+    // === PACKAGING === //
   , cssmin: {
       options: {
         banner: defaultBanner
@@ -116,7 +116,7 @@ module.exports = function(grunt) {
     , 'build/js/main.js': jsFiles
     }
 
-    // Deployment
+    // === DEPLOYMENT === //
   , 'gh-pages': {
       options: {
         base: 'build'

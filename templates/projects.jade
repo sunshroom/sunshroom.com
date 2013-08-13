@@ -10,7 +10,7 @@ block content
     -   return -item.date;
     - }).value();
     ul
-    each project in projects
-      li
-        a.local(href=project.url, title=project.title) #{project.title}
-        | : #{project.metadata.desc}
+      each project in projects
+        li
+          a.local(href=project.url, title=project.title) #{project.title}
+          | : #{project.metadata.desc}

@@ -15,7 +15,7 @@ html(lang='en')
         meta(property='og:author', content=locals.name)
         meta(property='og:site_name', content=locals.url)
         meta(property='og:type', content='website')
-        meta(property='og:url', content='#{locals.url}#{page.url}')
+        meta(property='og:url', content='http://#{locals.url}#{page.url}')
       if (locals.googlewebfonts)
         link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=#{locals.googlewebfonts}')
       link(rel='stylesheet', href='/css/main.css')
@@ -36,7 +36,7 @@ html(lang='en')
                   ul
                     each menu in locals.menu
                       li(class= (menu.url == page.url) ? 'active' : '')
-                        a(href=menu.url, title=menu.description) #{ menu.name }
+                        a(href=menu.url, title=menu.description) #{menu.name}
           section
             .content-wrap
               article
@@ -45,15 +45,15 @@ html(lang='en')
           footer
             .content-wrap
               block footer
-                section.copy
+                section
                   p &copy;2012&ndash;#{ new Date().getFullYear() } #{ locals.name }. Powered by&nbsp;
                     a(href='https://github.com/jnordberg/wintersmith') Wintersmith
                     .&nbsp;
-                    a(href='#{locals.source}') Source on GitHub
+                    a(href=locals.source) Source on GitHub
                     .
                 script(src='/js/main.js')
                 script.
-                  var _gaq=[['_setAccount','#{ locals.analytics }'],['_trackPageview'],['_trackPageLoadTime']];
+                  var _gaq=[['_setAccount','#{locals.analytics}'],['_trackPageview'],['_trackPageLoadTime']];
                   (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
                   g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
                   s.parentNode.insertBefore(g,s)}(document,'script'));
