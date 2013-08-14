@@ -20,42 +20,39 @@ html(lang='en')
         link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=#{locals.googlewebfonts}')
       link(rel='stylesheet', href='/css/main.css')
   body
-    .grid
-      .frame
+    .frame-outer
+      .frame-inner
         .contents
           header
-            .content-wrap
-              block header
-                .avatar-wrap
-                  a(href='/', title=locals.name + " - " + locals.description)
-                    div.avatar
-                      img(src='/img/avatar.jpg', title=alt=locals.name + " - " + locals.description, alt=locals.name + " - " + locals.description)
+            block header
+              .avatar-outer
                 a(href='/', title=locals.name + " - " + locals.description)
-                  h1= locals.name
-                nav
-                  ul
-                    each menu in locals.menu
-                      li(class= (menu.url == page.url) ? 'active' : '')
-                        a(href=menu.url, title=menu.description) #{menu.name}
+                  .avatar-inner
+                    img(src='/img/avatar.jpg', title=alt=locals.name + " - " + locals.description, alt=locals.name + " - " + locals.description)
+              a(href='/', title=locals.name + " - " + locals.description)
+                h1= locals.name
+              nav
+                ul
+                  each menu in locals.menu
+                    li(class= (menu.url == page.url) ? 'active' : '')
+                      a(href=menu.url, title=menu.description) #{menu.name}
           section
-            .content-wrap
-              article
-                block content
-                  !=contents['index.md'].html
+            article
+              block content
+                !=contents['index.md'].html
           footer
-            .content-wrap
-              block footer
-                section
-                  p &copy;2012&ndash;#{ new Date().getFullYear() } #{ locals.name }. Powered by&nbsp;
-                    a(href='https://github.com/jnordberg/wintersmith') Wintersmith
-                    .&nbsp;
-                    a(href=locals.source) Source on GitHub
-                    .
-                script(src='/js/main.js')
-                script.
-                  var _gaq=[['_setAccount','#{locals.analytics}'],['_trackPageview'],['_trackPageLoadTime']];
-                  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-                  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-                  s.parentNode.insertBefore(g,s)}(document,'script'));
-                unless _.isEmpty(contents.backgrounds)
-                  include backstretch
+            block footer
+              section
+                p &copy;2012&ndash;#{ new Date().getFullYear() } #{ locals.name }. Powered by&nbsp;
+                  a(href='https://github.com/jnordberg/wintersmith') Wintersmith
+                  .&nbsp;
+                  a(href=locals.source) Source on GitHub
+                  .
+              script(src='/js/main.js')
+              script.
+                var _gaq=[['_setAccount','#{locals.analytics}'],['_trackPageview'],['_trackPageLoadTime']];
+                (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+                g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+                s.parentNode.insertBefore(g,s)}(document,'script'));
+              unless _.isEmpty(contents.backgrounds)
+                include backstretch
