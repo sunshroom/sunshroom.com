@@ -43,11 +43,12 @@ html(lang='en')
           footer
             block footer
               section
-                p &copy;2012&ndash;#{ new Date().getFullYear() } #{ locals.name }. Powered by&nbsp;
+                .alignleft &copy;2012&ndash;#{ new Date().getFullYear() }&nbsp;
+                  a(href='mailto:' + locals.email) #{ locals.name }
+                .alignright Powered by&nbsp;
                   a(href='https://github.com/jnordberg/wintersmith') Wintersmith
-                  .&nbsp;
-                  a(href=locals.source) Source on GitHub
-                  .
+                  &nbsp;&middot;&nbsp;
+                  a(href=locals.source) Source
               script(src='/js/main.js')
               script.
                 var _gaq=[['_setAccount','#{locals.analytics}'],['_trackPageview'],['_trackPageLoadTime']];

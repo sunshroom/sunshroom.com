@@ -1,16 +1,20 @@
 extends layout
 
 block content
-  section.content!= typogr(page.html).typogrify()
+  - var projects = _.chain(contents.projects._.directories).map(function(item) {
+  -   return item.index;
+  - }).compact().sortBy(function(item) {
+  -   return -item.date;
+  - }).value();
 
-  section
-    - var projects = _.chain(contents.projects._.directories).map(function(item) {
-    -   return item.index;
-    - }).compact().sortBy(function(item) {
-    -   return -item.date;
-    - }).value();
-    ul
-      each project in projects
-        li
-          a.local(href=project.url, title=project.title) #{project.title}
-          | : #{project.metadata.desc}
+  section!= typogr(page.html).typogrify()
+
+  section.grid
+    each project in projects
+      - if (project.metadata.thumb == undefined) { //- Allow for the "thumb" metadata property to be overwritten
+      -   project.metadata.thumb = 'thumb.jpg';
+      - }
+      .grid-third
+        a.project(href=project.url, title=project.title) #{project.title}
+          img.project(src=project.url + project.metadata.thumb)
+        //- #{project.metadata.desc}

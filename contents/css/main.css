@@ -1,4 +1,4 @@
-/*! alexandersynaptic.com 0.0.4 2013-08-14 */
+/*! alexandersynaptic.com 0.0.4 2013-08-15 */
 /* normalize.css v2.1.2/v1.1.2 | MIT License | git.io/normalize */
 article,
 aside,
@@ -685,6 +685,54 @@ video {
   -webkit-box-shadow: inset 0 2px 6px rgba(0,0,0,0.25);
   box-shadow: inset 0 2px 6px rgba(0,0,0,0.25);
 }
+.contents>footer {
+  font-size: 0.75em;
+  line-height: 2.3703703703703702em;
+  margin: 1.7777777777777777em auto 0;
+}
+.grid {
+  position: relative;
+  width: 100%;
+  min-width: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.grid-half {
+  display: block;
+  position: relative;
+  float: left;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+}
+.grid-third {
+  display: block;
+  position: relative;
+  float: left;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333333333333%;
+}
+.grid-quarter {
+  display: block;
+  position: relative;
+  float: left;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333333333333%;
+}
 .clearfix {
   zoom: 1;
 }
@@ -696,8 +744,9 @@ video {
 .clearfix:after {
   clear: both;
 }
-.contents>footer {
-  font-size: 0.75em;
-  line-height: 2.3703703703703702em;
-  margin: 1.7777777777777777em auto 0;
+.alignleft {
+  float: left;
+}
+.alignright {
+  float: right;
 }
