@@ -9,23 +9,28 @@
   , "source": "https://github.com/synapticism/alexandersynaptic.com"
   , "menu": [
       {
-        "name": "Biography"
-      , "description": "All about me"
+        "name": "About Me"
+      , "description": "About me"
       , "url": "/biography/"
       }
     , {
-        "name": "Projects"
-      , "description": "Things I have done"
+        "name": "My Work"
+      , "description": "What I have been working on"
       , "url": "/projects/"
       }
     , {
-        "name": "Contact"
+        "name": "CV"
+      , "description": "My professional qualifications"
+      , "url": "/cv/"
+      }
+    , {
+        "name": "Contact Me"
       , "description": "How to reach me"
       , "url": "/contact/"
       }
   ]
   , "analytics": "UA-XXXXX-X"
-  , "googlewebfonts": "Russo+One|Open+Sans:400,700,400italic,700italic"
+  , "googlewebfonts": "PT+Serif:400,700,400italic,700italic"
   , "backstretch": {
       "fade": 500
     , "duration": 3000

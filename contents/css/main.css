@@ -1,4 +1,4 @@
-/*! alexandersynaptic.com 0.0.4 2013-08-15 */
+/*! alexandersynaptic.com 0.0.4 2013-08-22 */
 /* normalize.css v2.1.2/v1.1.2 | MIT License | git.io/normalize */
 article,
 aside,
@@ -204,7 +204,7 @@ html {
 }
 body {
   color: #222;
-  font-family: "Open Sans", Tahoma, "DejaVu Sans", "Lucida Sans", "Lucida Grande", "Bitstream Vera Sans", "Liberation Sans", Verdana, sans-serif;
+  font-family: "PT Serif", Georgia, "Palatino Linotype", Palatino, "URW Palladio L", "Book Antiqua", "Times New Roman", serif;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
@@ -244,7 +244,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Russo One", stack-tahoma;
+  font-family: "PT Serif", Cambria, Constantia, "URW Palladio L", "Palatino Linotype", Palatino, Georgia, "Book Antiqua", "Times New Roman", serif;
   margin: 0;
   text-rendering: optimizeLegibility;
 }
@@ -488,7 +488,7 @@ button,
 input,
 select,
 textarea {
-  font-family: "Open Sans", Tahoma, "DejaVu Sans", "Lucida Sans", "Lucida Grande", "Bitstream Vera Sans", "Liberation Sans", Verdana, sans-serif;
+  font-family: "PT Serif", Georgia, "Palatino Linotype", Palatino, "URW Palladio L", "Book Antiqua", "Times New Roman", serif;
   font-size: 100%;
   margin: 0;
   vertical-align: baseline;
@@ -642,48 +642,15 @@ video {
   margin-left: -1.3333333333333333em;
 }
 .contents>header nav ul li {
-  background: #fff;
-  -webkit-border-radius: 0.4444444444444444em;
-  border-radius: 0.4444444444444444em;
-  -webkit-box-shadow: inset 0 -2px 6px rgba(0,0,0,0.1);
-  box-shadow: inset 0 -2px 6px rgba(0,0,0,0.1);
   float: left;
   font-weight: bold;
   margin: 0 0 0.4444444444444444em 0.4444444444444444em;
   padding: 0 0.8888888888888888em 0 0.8888888888888888em;
-  text-shadow: 1px 1px 3px rgba(255,255,255,0.8);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
   text-transform: uppercase;
-}
-.contents>header nav ul li:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.03, #fff), color-stop(0.33333333333333326, rgba(255,255,255,0.1)), color-stop(1, rgba(0,0,0,0.1)));
-  background: -webkit-linear-gradient(top, #fff 3%, rgba(255,255,255,0.1) 33.33333333333333%, rgba(0,0,0,0.1) 100%);
-  background: -moz-linear-gradient(top, #fff 3%, rgba(255,255,255,0.1) 33.33333333333333%, rgba(0,0,0,0.1) 100%);
-  background: -o-linear-gradient(top, #fff 3%, rgba(255,255,255,0.1) 33.33333333333333%, rgba(0,0,0,0.1) 100%);
-  background: -ms-linear-gradient(top, #fff 3%, rgba(255,255,255,0.1) 33.33333333333333%, rgba(0,0,0,0.1) 100%);
-  background: linear-gradient(top, #fff 3%, rgba(255,255,255,0.1) 33.33333333333333%, rgba(0,0,0,0.1) 100%);
 }
 .contents>header nav ul li a {
   text-decoration: none;
-}
-.contents>header nav ul .active {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.03, #fff), color-stop(0.33333333333333326, rgba(255,255,255,0.1)), color-stop(1, rgba(0,0,0,0.1)));
-  background: -webkit-linear-gradient(top, #fff 3%, rgba(255,255,255,0.1) 33.33333333333333%, rgba(0,0,0,0.1) 100%);
-  background: -moz-linear-gradient(top, #fff 3%, rgba(255,255,255,0.1) 33.33333333333333%, rgba(0,0,0,0.1) 100%);
-  background: -o-linear-gradient(top, #fff 3%, rgba(255,255,255,0.1) 33.33333333333333%, rgba(0,0,0,0.1) 100%);
-  background: -ms-linear-gradient(top, #fff 3%, rgba(255,255,255,0.1) 33.33333333333333%, rgba(0,0,0,0.1) 100%);
-  background: linear-gradient(top, #fff 3%, rgba(255,255,255,0.1) 33.33333333333333%, rgba(0,0,0,0.1) 100%);
-  -webkit-box-shadow: inset 0 2px 6px rgba(0,0,0,0.2);
-  box-shadow: inset 0 2px 6px rgba(0,0,0,0.2);
-}
-.contents>header nav ul .active:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.03, #fff), color-stop(0.33333333333333326, rgba(255,255,255,0.15)), color-stop(1, rgba(0,0,0,0.15)));
-  background: -webkit-linear-gradient(top, #fff 3%, rgba(255,255,255,0.15) 33.33333333333333%, rgba(0,0,0,0.15) 100%);
-  background: -moz-linear-gradient(top, #fff 3%, rgba(255,255,255,0.15) 33.33333333333333%, rgba(0,0,0,0.15) 100%);
-  background: -o-linear-gradient(top, #fff 3%, rgba(255,255,255,0.15) 33.33333333333333%, rgba(0,0,0,0.15) 100%);
-  background: -ms-linear-gradient(top, #fff 3%, rgba(255,255,255,0.15) 33.33333333333333%, rgba(0,0,0,0.15) 100%);
-  background: linear-gradient(top, #fff 3%, rgba(255,255,255,0.15) 33.33333333333333%, rgba(0,0,0,0.15) 100%);
-  -webkit-box-shadow: inset 0 2px 6px rgba(0,0,0,0.25);
-  box-shadow: inset 0 2px 6px rgba(0,0,0,0.25);
 }
 .contents>footer {
   font-size: 0.75em;
