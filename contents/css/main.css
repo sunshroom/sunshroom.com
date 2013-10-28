@@ -1,4 +1,4 @@
-/*! alexandersynaptic.com 0.0.4 2013-08-22 */
+/*! alexandersynaptic.com 0.0.4 2013-10-29 */
 /* normalize.css v2.1.2/v1.1.2 | MIT License | git.io/normalize */
 article,
 aside,
@@ -413,7 +413,7 @@ var {
   font-family: Consolas, "Bitstream Vera Sans Mono", "Andale Mono", Monaco, "DejaVu Sans Mono", "Lucida Console", monospace;
 }
 hr {
-  background-color: #999;
+  background-color: #ccc;
   border: 0;
   height: 1px;
   margin-bottom: 1.7777777777777777em;
@@ -561,6 +561,11 @@ video {
   max-width: 960px;
   margin: 0 auto;
   width: 100%;
+  -webkit-transition: opacity 0.8s ease-out;
+  -moz-transition: opacity 0.8s ease-out;
+  -o-transition: opacity 0.8s ease-out;
+  -ms-transition: opacity 0.8s ease-out;
+  transition: opacity 0.8s ease-out;
 }
 .frame-inner {
   background: rgba(255,255,255,0.9);
@@ -657,6 +662,32 @@ video {
   line-height: 2.3703703703703702em;
   margin: 1.7777777777777777em auto 0;
 }
+.contents>footer nav {
+  font-size: 1.8333333333333333em;
+  line-height: 1.292929292929293em;
+  margin: 0 auto 1.7777777777777777em;
+}
+.slideshow-toggle {
+  font-size: 1em;
+  line-height: 1.7777777777777777em;
+  background: rgba(255,255,255,0.9);
+  -webkit-border-radius: 1.7777777777777777em;
+  border-radius: 1.7777777777777777em;
+  -webkit-box-shadow: inset 0 3px 50px rgba(0,0,0,0.05), 0 0 25px rgba(0,0,0,0.1);
+  box-shadow: inset 0 3px 50px rgba(0,0,0,0.05), 0 0 25px rgba(0,0,0,0.1);
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  position: absolute;
+  right: 0.8888888888888888em;
+  bottom: 0.8888888888888888em;
+  padding: 0.8888888888888888em;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
 .grid {
   position: relative;
   width: 100%;
@@ -716,4 +747,14 @@ video {
 }
 .alignright {
   float: right;
+}
+.hide {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+.show {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
 }

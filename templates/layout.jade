@@ -42,18 +42,25 @@ html(lang='en')
                 !=contents['index.md'].html
           footer
             block footer
+              hr
               section
                 .alignleft &copy;2012&ndash;#{ new Date().getFullYear() }&nbsp;
                   a(href='mailto:' + locals.email) #{ locals.name }
+                  unless _.isEmpty(contents.img.backgrounds)
+                    &nbsp;&middot;&nbsp;
+                    a(href='#').slideshow Slideshow
                 .alignright Powered by&nbsp;
                   a(href='https://github.com/jnordberg/wintersmith') Wintersmith
                   &nbsp;&middot;&nbsp;
                   a(href=locals.source) Source
-              script(src='/js/main.js')
-              script.
-                var _gaq=[['_setAccount','#{locals.analytics}'],['_trackPageview'],['_trackPageLoadTime']];
-                (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-                g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-                s.parentNode.insertBefore(g,s)}(document,'script'));
-              unless _.isEmpty(contents.img.backgrounds)
-                include backstretch
+    unless _.isEmpty(contents.img.backgrounds)
+      .slideshow-toggle
+        a(href='#').slideshow Exit slideshow
+    script(src='/js/main.js')
+    script.
+      var _gaq=[['_setAccount','#{locals.analytics}'],['_trackPageview'],['_trackPageLoadTime']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    unless _.isEmpty(contents.img.backgrounds)
+      include backstretch

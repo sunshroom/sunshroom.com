@@ -10,12 +10,12 @@
   , "menu": [
       {
         "name": "About Me"
-      , "description": "About me"
+      , "description": "Just about everyone you'd want to know about me"
       , "url": "/biography/"
       }
     , {
-        "name": "My Work"
-      , "description": "What I have been working on"
+        "name": "Projects"
+      , "description": "A few of the things I spend my time on"
       , "url": "/projects/"
       }
     , {
@@ -33,7 +33,7 @@
   , "googlewebfonts": "PT+Serif:400,700,400italic,700italic"
   , "backstretch": {
       "fade": 500
-    , "duration": 3000
+    , "duration": 4000
     , "random": true
     }
   }
