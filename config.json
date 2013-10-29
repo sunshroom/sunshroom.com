@@ -9,13 +9,13 @@
   , "source": "https://github.com/synapticism/alexandersynaptic.com"
   , "menu": [
       {
-        "name": "About Me"
-      , "description": "Just about everyone you'd want to know about me"
+        "name": "Biography"
+      , "description": "All about me"
       , "url": "/biography/"
       }
     , {
         "name": "Projects"
-      , "description": "A few of the things I spend my time on"
+      , "description": "Selected creative work"
       , "url": "/projects/"
       }
     , {
@@ -24,7 +24,7 @@
       , "url": "/cv/"
       }
     , {
-        "name": "Contact Me"
+        "name": "Contact"
       , "description": "How to reach me"
       , "url": "/contact/"
       }

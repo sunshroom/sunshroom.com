@@ -688,6 +688,18 @@ video {
   -ms-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
+.project {
+  position: relative;
+  width: 100%;
+}
+.project h3 {
+  position: absolute;
+  color: #fff;
+  background: #999;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
 .grid {
   position: relative;
   width: 100%;

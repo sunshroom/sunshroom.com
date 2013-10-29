@@ -14,7 +14,7 @@ block content
       - if (project.metadata.thumb == undefined) { //- Allow for the "thumb" metadata property to be overwritten
       -   project.metadata.thumb = 'thumb.jpg';
       - }
-      .grid-third
-        a.project(href=project.url, title=project.title) #{project.title}
-          img.project(src=project.url + project.metadata.thumb)
-        //- #{project.metadata.desc}
+      .project
+        a(href=project.url, title=project.title) #{project.title}
+          //-img(src=project.url + project.metadata.thumb)
+        . #{project.metadata.desc}

@@ -42,7 +42,7 @@ bower_components
 
 # Project Specific #
 ####################
-contents/backgrounds/
+contents/img/backgrounds/
 contents/projects/
 build/
 test.html
