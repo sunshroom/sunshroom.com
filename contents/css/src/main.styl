@@ -75,7 +75,6 @@ base-p-style      = web // Either "web" (spaces between paragraphs) or "book" (n
   z-index -1
 
 .contents>header
-  margin 0 0 space(0.75)
   a:hover
     text-decoration none
   h1:hover
@@ -93,16 +92,28 @@ base-p-style      = web // Either "web" (spaces between paragraphs) or "book" (n
     li
       float left
       font-weight bold
-      margin 0 0 space(0.25) space(0.25)
+      margin 0 0 0 space(0.25)
       padding 0 space(0.5) 0 space(0.5)
       text-shadow 1px 1px 3px rgba(0,0,0,0.1)
       text-transform uppercase
       a
         text-decoration none
 
+.contents>section
+  border-bottom 1px solid c-hr
+  border-top 1px solid c-hr
+  margin-bottom space(0.5, 1px)
+  margin-top space(0.5)
+  padding-bottom space(0.5)
+  padding-top space(0.5, 1px)
+
+.contents>section article img
+  border-radius space(0.5)
+  box-shadow 0 3px 9px rgba(0,0,0,0.5)
+
 .contents>footer
   scale 8
-  margin space() auto 0
+  margin 0 auto
 
 .contents>footer nav
   scale 3 8
@@ -114,23 +125,11 @@ base-p-style      = web // Either "web" (spaces between paragraphs) or "book" (n
   border-radius space()
   box-shadow inset 0 3px 50px rgba(0,0,0,0.05), 0 0 25px rgba(0,0,0,0.1)
   opacity 0
-  position absolute
-  right space(0.5)
-  bottom space(0.5)
   padding space(0.5)
-  transition all .4s ease
-
-.project
-  position relative
-  width 100%
-
-.project h3
   position absolute
-  color #fff
-  background #999
-  bottom 0
-  left 0
-  width 100%
+  bottom space(0.5)
+  right space(0.5)
+  transition all .4s ease
 
 // Helpers
 .grid
@@ -153,6 +152,18 @@ base-p-style      = web // Either "web" (spaces between paragraphs) or "book" (n
 
 .alignright
   float right
+
+.padleft
+  padding-left space()
+
+.padright
+  padding-right space()
+
+.marginleft
+  margin-left space()
+
+.marginright
+  margin-right space()
 
 .hide
   opacity 0

@@ -22,7 +22,7 @@ module.exports = function(grunt) {
   var jsFiles = [
     'bower_components/jquery/jquery.js'
   , 'bower_components/jquery-backstretch/jquery.backstretch.js'
-  , 'contents/js/src/_project.js'
+  , 'contents/js/src/_*.js'
   ]
     , defaultBanner = '/*! <%= pkg.name %> <%= pkg.version %> <%= grunt.template.today("yyyy-mm-dd") %> */\n';
 

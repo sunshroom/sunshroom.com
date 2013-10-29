@@ -5,7 +5,7 @@
   , "name": "Alexander Synaptic"
   , "email": "alexander@synapticism.com"
   , "description": "Stray thoughts caught in the spider's web"
-  , "keywords": "synaptic, design, development, photography, entrepreneur, identity"
+  , "keywords": "synaptic, design, development, photography, entrepreneur, startup, identity"
   , "source": "https://github.com/synapticism/alexandersynaptic.com"
   , "menu": [
       {
@@ -14,19 +14,24 @@
       , "url": "/biography/"
       }
     , {
-        "name": "Projects"
+        "name": "Photography"
+      , "description": "Take a look at the world through my eyes"
+      , "url": "/photography/"
+      }
+    , {
+        "name": "Design"
       , "description": "Selected creative work"
-      , "url": "/projects/"
+      , "url": "/design/"
       }
     , {
-        "name": "CV"
-      , "description": "My professional qualifications"
-      , "url": "/cv/"
+        "name": "Development"
+      , "description": "Making cool stuff happen with technology"
+      , "url": "/development/"
       }
     , {
-        "name": "Contact"
+        "name": "Connect"
       , "description": "How to reach me"
-      , "url": "/contact/"
+      , "url": "/connect/"
       }
   ]
   , "analytics": "UA-XXXXX-X"

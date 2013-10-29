@@ -1,4 +1,4 @@
-/*! alexandersynaptic.com 0.0.4 2013-10-29 */
+/*! alexandersynaptic.com 0.0.4 2013-10-30 */
 /* normalize.css v2.1.2/v1.1.2 | MIT License | git.io/normalize */
 article,
 aside,
@@ -622,9 +622,6 @@ video {
   width: 5.333333333333333em;
   z-index: -1;
 }
-.contents>header {
-  margin: 0 0 1.3333333333333333em;
-}
 .contents>header a:hover {
   text-decoration: none;
 }
@@ -649,7 +646,7 @@ video {
 .contents>header nav ul li {
   float: left;
   font-weight: bold;
-  margin: 0 0 0.4444444444444444em 0.4444444444444444em;
+  margin: 0 0 0 0.4444444444444444em;
   padding: 0 0.8888888888888888em 0 0.8888888888888888em;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
   text-transform: uppercase;
@@ -657,10 +654,24 @@ video {
 .contents>header nav ul li a {
   text-decoration: none;
 }
+.contents>section {
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  margin-bottom: 0.8333333333333333em;
+  margin-top: 0.8888888888888888em;
+  padding-bottom: 0.8888888888888888em;
+  padding-top: 0.8333333333333333em;
+}
+.contents>section article img {
+  -webkit-border-radius: 0.8888888888888888em;
+  border-radius: 0.8888888888888888em;
+  -webkit-box-shadow: 0 3px 9px rgba(0,0,0,0.5);
+  box-shadow: 0 3px 9px rgba(0,0,0,0.5);
+}
 .contents>footer {
   font-size: 0.75em;
   line-height: 2.3703703703703702em;
-  margin: 1.7777777777777777em auto 0;
+  margin: 0 auto;
 }
 .contents>footer nav {
   font-size: 1.8333333333333333em;
@@ -678,27 +689,15 @@ video {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
-  position: absolute;
-  right: 0.8888888888888888em;
-  bottom: 0.8888888888888888em;
   padding: 0.8888888888888888em;
+  position: absolute;
+  bottom: 0.8888888888888888em;
+  right: 0.8888888888888888em;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
   transition: all 0.4s ease;
-}
-.project {
-  position: relative;
-  width: 100%;
-}
-.project h3 {
-  position: absolute;
-  color: #fff;
-  background: #999;
-  bottom: 0;
-  left: 0;
-  width: 100%;
 }
 .grid {
   position: relative;
@@ -759,6 +758,18 @@ video {
 }
 .alignright {
   float: right;
+}
+.padleft {
+  padding-left: 1.7777777777777777em;
+}
+.padright {
+  padding-right: 1.7777777777777777em;
+}
+.marginleft {
+  margin-left: 1.7777777777777777em;
+}
+.marginright {
+  margin-right: 1.7777777777777777em;
 }
 .hide {
   opacity: 0;
