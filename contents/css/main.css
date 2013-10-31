@@ -1,4 +1,4 @@
-/*! alexandersynaptic.com 0.0.4 2013-10-30 */
+/*! alexandersynaptic.com 0.0.4 2013-10-31 */
 /* normalize.css v2.1.2/v1.1.2 | MIT License | git.io/normalize */
 article,
 aside,
@@ -381,6 +381,12 @@ q:before {
 }
 q:after {
   content: "\00a0\201D";
+}
+figcaption {
+  font-size: 0.8125em;
+  line-height: 2.1880341880341883em;
+  color: #4e4e4e;
+  font-style: italic;
 }
 code,
 pre {

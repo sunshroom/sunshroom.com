@@ -3,6 +3,14 @@ title: Photography
 template: index.jade
 ---
 
+With [my photography](http://synapticism.com/c/portfolio/photography/) I wish to share my explorations of this strange and fantastical world of ours.
+
+I am endlessly fascinated by the secret lives of inanimate objects, the eerie solemnity of abandoned places, and the desolate beauty of [manufactured landscapes](http://www.imdb.com/title/tt0832903/). I am drawn to the visual rhythm of grit, grime, and decay.
+
+I intend to let others see the world through my eyes, not just my camera lens. I digitally alter my photographs to better reflect my experience of reality---as a strange and fantastical realm riddled with hidden stories and long-lost secrets. With my overly active imagination much of what I do can be considered [magic realism](https://en.wikipedia.org/wiki/Magic_realism).
+
+I am also a [graphic designer](/design/) and use a lot of my own original photography in my work.
+
 ![The broken flues of Jinguashi, Taiwan.](synaptic-jinguashi-flues.jpg)
 
 ## Equipment
@@ -31,7 +39,7 @@ I also publish [themed galleries of my work](http://synapticism.com/c/portfolio/
 
 Follow me on [Instagram](http://www.instagram.com/synapticx) for a more immediate and far less serious glimpse into my life. I use it just for fun; don't expect me to be making art over there.
 
-### Recent work
+## Recent work
 
 Here are a few examples of my recent work in Asia:
 
