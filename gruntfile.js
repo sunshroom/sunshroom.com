@@ -121,8 +121,8 @@ module.exports = function(grunt) {
   , 'gh-pages': {
       options: {
         base: 'build'
+      , message: 'Auto-generated commit.'
       }
-    , message: 'Auto-generated commit.'
     , src: ['**']
     }
 
