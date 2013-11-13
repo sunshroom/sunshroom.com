@@ -3,7 +3,7 @@ title: Connect
 template: index.jade
 ---
 
-The best way to reach me is via email at alexander@synapticism.com.
+The best way to reach me is via email at [alexander@synapticism.com](mailto:alexander@synapticism.com).
 
 You can also find me elsewhere on the web...
 
