@@ -17,7 +17,7 @@ module.exports = function(grunt) {
   grunt.registerTask('build', ['clean', 'concat', 'stylus', 'wintersmith']);
   grunt.registerTask('preview', ['build', 'express', 'watch']);
   grunt.registerTask('test', ['jshint:dev']); // Not very much here so far; CSS Lint not yet integrated
-  grunt.registerTask('deploy', ['build', 'cssmin', 'uglify']); // , 'gh-pages'
+  grunt.registerTask('deploy', ['build', 'cssmin', 'uglify', 'gh-pages']);
 
   var jsFiles = [
     'bower_components/jquery/jquery.js'
@@ -122,7 +122,7 @@ module.exports = function(grunt) {
       options: {
         base: 'build'
       }
-    , src: '**/*'
+    , src: ['**']
     , message: 'Auto-generated commit'
     }
 

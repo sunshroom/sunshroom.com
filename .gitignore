@@ -45,5 +45,7 @@ bower_components
 contents/img/backgrounds/
 contents/projects/
 build/
+.grunt/
 test.html
 draft.md
+
