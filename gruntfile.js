@@ -122,8 +122,8 @@ module.exports = function(grunt) {
       options: {
         base: 'build'
       }
+    , message: 'Auto-generated commit.'
     , src: ['**']
-    , message: 'Auto-generated commit'
     }
 
   });
