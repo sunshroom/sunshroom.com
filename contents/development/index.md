@@ -23,7 +23,7 @@ These days I am deeply engaged in redeveloping the site after completing [a succ
 
 ### My homepage
 
-[This homepage](http://alexandersynaptic.com) is an experiment in using Wintersmith, a Node-based static site generator, to create a simple personal homepage. The best way to learn is to give yourself a project--so I took it upon myself to learn how to work with Node, Jade, Stylus, Grunt, Bower, and GitHub pages by developing this site. [View the source on GitHub](https://github.com/synapticism/alexandersynaptic.com).
+[This homepage](http://alexandersynaptic.com) is an experiment in using Wintersmith, a Node-based static site generator, to create a simple personal homepage. The best way to learn is to give yourself a project--so I took it upon myself to learn how to work with Node, Jade, Stylus, Grunt, Bower, and GitHub pages by developing this web site. [View the source on GitHub](https://github.com/synapticism/alexandersynaptic.com).
 
 ### Nginx configuration files
 

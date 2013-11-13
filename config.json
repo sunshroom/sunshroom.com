@@ -29,6 +29,11 @@
       , "url": "/development/"
       }
     , {
+        "name": "Music"
+      , "description": "My record labels and DJing"
+      , "url": "/music/"
+      }
+    , {
         "name": "Connect"
       , "description": "How to reach me"
       , "url": "/connect/"
