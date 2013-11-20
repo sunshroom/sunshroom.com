@@ -3,6 +3,8 @@ title: Photography
 template: index.jade
 ---
 
+## Synaptic Imagery
+
 My insatiable curiosity and perpetual wanderlust compel me to explore this strange and fantastical world of ours in a deep and incisive way. With [my photography](http://synapticism.com/c/portfolio/photography/) I aim to share my adventures filtered through the lens of memory, as surreal and dreamlike imagery infused with a sense of [magic realism](https://en.wikipedia.org/wiki/Magic_realism).
 
 I am endlessly fascinated by the secret lives of inanimate objects, the eerie solemnity of abandoned places, the desolate beauty of [manufactured landscapes](http://www.imdb.com/title/tt0832903/), and the wonders of remote and exotic locales. I am drawn to the visual rhythm of grit, grime, and decay and inspired by the majestic works of nature. I am especially interested in the juxtaposition and intersection of organic and artificial forms, particularly those places where nature is busily reclaiming manmade structures and objects. Most of all I am intent on exposing the hidden stories and forgotten fables all around us.
@@ -23,13 +25,13 @@ I make extensive use of Adobe Lightroom in my post-processing workflow. All of m
 
 ![The farthest shore, a remote stretch of coast in Pingtung county, Taiwan.](synaptic-farthest-shore.jpg)
 
-## On the web
+## Connect
 
 All my properly geotagged photographs are available in full quality on my [Flickr photostream](https://secure.flickr.com/photos/synapticism/).
 
 I also publish [themed galleries of my work](http://synapticism.com/c/portfolio/photography/) on [my personal blog](http://synapticism.com).
 
-[Many of my photos are available on Facebook](https://www.facebook.com/synaptic/photos_albums). If it is shared publicly you are welcome to "like" or comment on my photos--but please note that I do not accept friend requests without an introduction.
+Find me on Facebook as [Synaptic Imagery](https://www.facebook.com/synaptic.imagery). I tend to post only the best of my work there.
 
 Follow me on [Instagram](http://www.instagram.com/synapticx) for a more immediate and far less serious glimpse into my life. I use Instagram for fun, to tell stories, and to be weird; don't expect me to be making art over there.
 

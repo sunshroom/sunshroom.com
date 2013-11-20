@@ -3,7 +3,7 @@ title: Music
 template: index.jade
 ---
 
-I have been passionate about music for as long as I can remember. Over the years this has driven me to apply myself to various music-related projects. I never seem to get around to creating music myself--but I certainly facilitate its production and consumption through DJing, operating several record labes, and managing my free music distribution portal.
+I have been passionate about music for as long as I can remember. Over the years this has driven me to apply myself to various music-related projects. I never seem to get around to creating music myself--but I certainly facilitate its production and consumption through DJing, operating several record labes, and managing my [free music distribution portal](http://www.ektoplazm.com).
 
 ## DJing
 
