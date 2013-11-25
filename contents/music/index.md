@@ -9,13 +9,13 @@ I have been passionate about music for as long as I can remember. Over the years
 
 ### Basilisk
 
-Basilisk is the name I use for psychedelic trance DJing.
+[Basilisk](http://www.ektoplazm.com/profiles/basilisk) is my stage name in the psychedelic trance scene as well as the name that most people know me by. I pride myself on being a generalist, playing a wide range of different styles within the psytrance genre. My goal has always been to celebrate the diversity of psytrance rather than focus on one small piece of the puzzle. I also have a healthy respect for the timelessness of music and tend to take on the role of musical archaeologist by exploring the obscure depths of trance music history in my mixes and sets.
 
 Find Basilisk on [Mixcloud](http://www.mixcloud.com/Basilisk/) and [Facebook](http://www.facebook.com/DJ.Basilisk).
 
 ### Synaptic FX
 
-Synaptic FX is the name I use for house and techno DJing.
+Synaptic FX is the name I use for house and techno DJing. It is under this alias that I focus on more cutting edge trends in electronic music culture. My goal with this project is to express my love for futurism in music. In this way both my projects are evenly balanced.
 
 Find Synaptic FX on [Mixcloud](http://www.mixcloud.com/SynapticFX/) and [Facebook](http://www.facebook.com/SynapticFX).
 
@@ -23,7 +23,7 @@ Find Synaptic FX on [Mixcloud](http://www.mixcloud.com/SynapticFX/) and [Faceboo
 
 ### Ektoplazm
 
-Ektoplazm is the name of my music distribution portal as well as my first netlabel. Founded in 2008, the Ektoplazm record label is chartered to promote unconventional talent with a professional approach to releasing free music in MP3, FLAC, and WAV format. The label has no defining sound; instead, it is dedicated to showcasing the range and diversity of the global psychedelic trance movement, always with an ear for quality.
+Ektoplazm is the name of my music distribution portal as well as my first netlabel. Founded in 2008, the Ektoplazm record label is chartered to promote unconventional talent with a professional approach to releasing free music in MP3, FLAC, and WAV format. The label has no defining sound; instead, it is dedicated to showcasing the range and diversity of the global psychedelic trance movement, always with an ear for quality. Altogether the label's releases have been downloaded more than 800,000 times as of November 2013.
 
 [Ektoplazm discography](http://www.ektoplazm.com/profiles/ektoplazm).
 
