@@ -26,5 +26,6 @@ You can also find me elsewhere on the web...
 ## Other
 
 - [GitHub](https://www.github.com/Synapticism): open source development work.
-- [Behance](http://www.behance.net/synaptic): selected design and photography highlights.
-- [Twitter](https://www.twitter.com/Synapticism): lifestreaming.
+- [Behance](http://www.behance.net/synaptic): selected design and photography highlights (seldom updated).
+- [Twitter](https://www.twitter.com/Synapticism): random diversions (mostly automated).
+- [App.net](https://alpha.app.net/synaptic): automated activity feed.
