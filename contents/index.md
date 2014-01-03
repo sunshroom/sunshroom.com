@@ -1,5 +1,5 @@
 ---
-title: Index
+title: Design, development, photography, minimalism, music, and entrepreneurship
 template: index.jade
 ---
 

@@ -669,15 +669,17 @@ video {
 }
 .contents>header nav {
   float: left;
+  font-size: 0.875em;
+  line-height: 2.0317460317460316em;
 }
 .contents>header nav ul {
   list-style-type: none;
-  margin-left: -1.3333333333333333em;
+  margin-left: -1.1111111111111112em;
 }
 .contents>header nav ul li {
   float: left;
   font-weight: bold;
-  margin: 0 0 0 0.4444444444444444em;
+  margin: 0 0 0 0.2222222222222222em;
   padding: 0 0.8888888888888888em 0 0.8888888888888888em;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
   text-transform: uppercase;
