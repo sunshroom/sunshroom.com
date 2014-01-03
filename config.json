@@ -1,11 +1,11 @@
 {
   "locals": {
-    "version": "0.1"
+    "version": "1.0"
   , "url": "alexandersynaptic.com"
   , "name": "Alexander Synaptic"
   , "email": "alexander@synapticism.com"
-  , "description": "Stray thoughts caught in the spider's web"
-  , "keywords": "synaptic, design, development, photography, entrepreneur, startup, identity"
+  , "description": "The personal homepage of Alexander Synaptic"
+  , "keywords": "synaptic, design, development, photography, entrepreneur, startup, identity, music, DJ, psytrance, trance, techno, house, electronic"
   , "source": "https://github.com/synapticism/alexandersynaptic.com"
   , "menu": [
       {
@@ -30,7 +30,7 @@
       }
     , {
         "name": "Music"
-      , "description": "My record labels and DJing"
+      , "description": "DJing and record label work"
       , "url": "/music/"
       }
     , {

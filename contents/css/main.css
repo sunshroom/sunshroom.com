@@ -1,4 +1,4 @@
-/*! alexandersynaptic.com 0.0.4 2013-11-26 */
+/*! alexandersynaptic.com 0.0.4 2014-01-03 */
 /* normalize.css v2.1.2/v1.1.2 | MIT License | git.io/normalize */
 article,
 aside,
@@ -655,6 +655,17 @@ video {
 }
 .contents>header a:hover {
   text-decoration: none;
+}
+.contents>header h1:hover {
+  -webkit-background-clip: text;
+  background-color: #595959;
+  color: transparent;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+  -webkit-transition: 0.5s ease-out;
+  -moz-transition: 0.5s ease-out;
+  -o-transition: 0.5s ease-out;
+  -ms-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
 }
 .contents>header nav {
   float: left;

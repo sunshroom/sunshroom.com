@@ -5,9 +5,9 @@ template: index.jade
 
 I have been developing web sites since the late 1990s but only recently got serious about programming. Nowadays I am learning JavaScript, Node, and Angular with the lofty goal of becoming a full stack developer.
 
-Prior to this I worked as a front-end developer and user interface designer from 1999 to 2007. I mainly worked with HTML, CSS, and various templating languages and seldom made any forays into server-side programming.
+Prior to this I worked as a front-end developer and user interface designer from 1999 to 2007. I primarily worked with HTML, CSS, and various templating languages, seldom making any forays into server-side programming.
 
-In the middle of the noughties I discovered WordPress and began to teach myself PHP and MySQL on my own time. With my newfound skills I built a niche market music distribution platform, described below. I left the corporate world for higher education but continued to work on my own projects, learning new skills as I went along, particularly when scaling my web site with Nginx.
+In the middle of the 2000s I discovered WordPress and began to teach myself PHP and MySQL on my own time. With my newfound skills I built a niche market music distribution platform, described below. I left the corporate world for higher education but continued to work on my own projects, learning new skills as I went along, particularly when scaling my web site with Nginx.
 
 After graduating from university in 2011 my interest in web technology was rekindled and I began the long process of updating my skills and workflow for the new decade.
 
@@ -17,7 +17,7 @@ Here are several development projects I have worked on over the course of the la
 
 ### Ektoplazm
 
-My most notable achievement is building a niche market music distribution platform, [Ektoplazm](http://www.ektoplazm.com), which became very popular in the subculture it serves. Since 2007 more than 10 million full releases have been downloaded--approximately 50 million tracks in all, a number on par with industry giants like Bandcamp. This was accomplished on a shoestring budget without any advertising dollars. The full story is covered on my blog in [a beginner's guide to Ektoplazm](http://synapticism.com/a-beginners-guide-to-ektoplazm/).
+My most notable achievement is building a niche market music distribution platform, [Ektoplazm](http://www.ektoplazm.com), which became very popular in the subculture it serves. Between 2007 and 2013 more than 10 million full releases were downloaded--approximately 50 million tracks in all, a number on par with industry giants like Bandcamp. This was accomplished on a shoestring budget without any advertising dollars. The full story is covered on my blog in [a beginner's guide to Ektoplazm](http://synapticism.com/a-beginners-guide-to-ektoplazm/).
 
 These days I am deeply engaged in redeveloping the site after completing [a successful crowdfunding campaign](http://www.indiegogo.com/ektoplazm-2012) in the summer of 2012.
 
