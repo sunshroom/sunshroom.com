@@ -9,17 +9,17 @@ My insatiable curiosity and perpetual wanderlust compel me to explore this stran
 
 I am endlessly fascinated by the secret lives of inanimate objects, the eerie solemnity of abandoned places, the desolate beauty of [manufactured landscapes](http://www.imdb.com/title/tt0832903/), and the wonders of remote and exotic locales. I am drawn to the visual rhythm of grit, grime, and decay and inspired by the majestic works of nature. I am especially interested in the juxtaposition and intersection of organic and artificial forms, particularly those places where nature is busily reclaiming manmade structures and objects. Most of all I am intent on exposing the hidden stories and forgotten fables all around us.
 
-My work can be broadly categorized into nature, landscape, travel, street, and "urbex" (urban exploration) photography, but I am also interested in capturing people, textures, and abstract imagery.
+My work can be broadly categorized into nature, landscape, travel, street, and urban exploration (urbex) photography, but I am also interested in capturing people, textures, and abstract imagery.
 
-I am also a [graphic designer](/design/) and use a lot of my own original photography in my work.
+I am also a [graphic designer](/design) and use a lot of my own original photography in my work.
 
 ![The broken flues of Jinguashi, Taiwan.](synaptic-jinguashi-flues.jpg)
 
-## Equipment
+## <a name="equipment"></a>Equipment
 
 I mainly shoot with a Nikon D3100 (formerly a D40) and the kit lens (18-55mm). I have explored using accessories such as a tripod and a bounce flash but always return to a minimal setup for ease of use and portability.
 
-## Processing
+## <a name="processing"></a>Processing
 
 I make extensive use of Adobe Lightroom in my post-processing workflow. All of my development presets are open source and available for download via [GitHub](https://github.com/synapticism/synaptic-lightroom-presets). The collection is constantly evolving as I learn more about the software and experiment with new techniques.
 
@@ -72,3 +72,5 @@ Here are just a few examples of my recent work in Asia:
 ![Fading into the afterglow outside of Tuaran, Malaysia.](synaptic-tuaran-cemetery.jpg)
 
 ![The setting sun from the Maokong cable cars in Taipei.](synaptic-taipei-maokong-sunset.jpg)
+
+If you like what you see please follow me on [Flickr](https://secure.flickr.com/photos/synapticism/) or [Instagram](http://www.instagram.com/synapticx)!
