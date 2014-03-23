@@ -1,11 +1,10 @@
 {
   "locals": {
-    "version": "1.0"
+    "version": "1.1"
   , "url": "alexandersynaptic.com"
   , "name": "Alexander Synaptic"
   , "email": "alexander@synapticism.com"
-  , "description": "The personal homepage of Alexander Synaptic"
-  , "keywords": "synaptic, design, development, photography, entrepreneur, startup, identity, music, DJ, psytrance, trance, techno, house, electronic"
+  , "description": "The personal homepage of Alexander Synaptic focusing on design, development, photography, minimalism, music, and entrepreneurship."
   , "source": "https://github.com/synapticism/alexandersynaptic.com"
   , "menu": [
       {
@@ -42,8 +41,8 @@
   , "analytics": "UA-45693599-1"
   , "googlewebfonts": "PT+Serif:400,700,400italic,700italic"
   , "backstretch": {
-      "fade": 500
-    , "duration": 4000
+      "fade": 700
+    , "duration": 5000
     , "random": true
     }
   }

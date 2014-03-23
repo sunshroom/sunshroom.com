@@ -4,6 +4,7 @@
 $(".slideshow").click(function() {
   $(".frame-outer").toggleClass("hide");
   $(".slideshow-toggle").toggleClass("show");
+  $("body").toggleClass("slideshow-active");
 });
 
 // Insert image caption; adapted from http://davemcmillan.net/447/snippets/use-jquery-to-display-an-image-alt-tag-as-a-caption-overlay/

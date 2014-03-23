@@ -3,9 +3,7 @@ title: Photography
 template: index.jade
 ---
 
-## Synaptic Imagery
-
-My insatiable curiosity and perpetual wanderlust compel me to explore this strange and fantastical world of ours in a deep and incisive way. With [my photography](http://synapticism.com/c/portfolio/photography/) I aim to share my adventures filtered through the lens of memory, as surreal and dreamlike imagery infused with a sense of [magic realism](https://en.wikipedia.org/wiki/Magic_realism).
+<img src="synaptic-ideal.jpg" class="alignright marginleft" title="Capturing the world I see." alt="Capturing the world I see." /> My insatiable curiosity and perpetual wanderlust compel me to explore this strange and fantastical world of ours in a deep and incisive way. With [my photography](http://synapticism.com/c/portfolio/photography/) I aim to share my adventures filtered through the lens of memory, as surreal and dreamlike imagery infused with a sense of [magic realism](https://en.wikipedia.org/wiki/Magic_realism).
 
 I am endlessly fascinated by the secret lives of inanimate objects, the eerie solemnity of abandoned places, the desolate beauty of [manufactured landscapes](http://www.imdb.com/title/tt0832903/), and the wonders of remote and exotic locales. I am drawn to the visual rhythm of grit, grime, and decay and inspired by the majestic works of nature. I am especially interested in the juxtaposition and intersection of organic and artificial forms, particularly those places where nature is busily reclaiming manmade structures and objects. Most of all I am intent on exposing the hidden stories and forgotten fables all around us.
 
@@ -13,7 +11,7 @@ My work can be broadly categorized into nature, landscape, travel, street, and u
 
 I am also a [graphic designer](/design) and use a lot of my own original photography in my work.
 
-![The broken flues of Jinguashi, Taiwan.](synaptic-jinguashi-flues.jpg)
+![The broken flues of Jinguashi, Taiwan.](/img/photos/synaptic-jinguashi-flues.jpg)
 
 ## <a name="equipment"></a>Equipment
 
@@ -23,7 +21,7 @@ I mainly shoot with a Nikon D3100 (formerly a D40) and the kit lens (18-55mm). I
 
 I make extensive use of Adobe Lightroom in my post-processing workflow. All of my development presets are open source and available for download via [GitHub](https://github.com/synapticism/synaptic-lightroom-presets). The collection is constantly evolving as I learn more about the software and experiment with new techniques.
 
-![The farthest shore, a remote stretch of coast in Pingtung county, Taiwan.](synaptic-farthest-shore.jpg)
+![The farthest shore, a remote stretch of coast in Pingtung county, Taiwan.](/img/photos/synaptic-farthest-shore.jpg)
 
 ## Connect
 
@@ -35,7 +33,7 @@ Find me on Facebook as [Synaptic Imagery](https://www.facebook.com/synaptic.imag
 
 Follow me on [Instagram](http://www.instagram.com/synapticx) for a more immediate and far less serious glimpse into my life. I use Instagram for fun, to tell stories, and to be weird; don't expect me to be making art over there.
 
-![An overview of elemental forces at work along the Dajia river, Taichung.](synaptic-dajia-riverbed.jpg)
+![An overview of elemental forces at work along the Dajia river, Taichung.](/img/photos/synaptic-dajia-riverbed.jpg)
 
 ## Terms of use
 
@@ -47,30 +45,34 @@ I place one additional limitation on the usage of my photography: you must secur
 
 Here are just a few examples of my recent work in Asia:
 
-![Sand dunes along the Pacific shoreline in Pingtung county, Taiwan.](synaptic-pingtung-sand-dunes.jpg)
+![Keelung islet from the northern shore of Taiwan.](/img/photos/synaptic-keelung-islet.jpg)
 
-![An overgrown ruin in Kampung Baru, Kuala Lumpur.](synaptic-klcc-overgrown.jpg)
+![Sand dunes along the Pacific shoreline in Pingtung county, Taiwan.](/img/photos/synaptic-pingtung-sand-dunes.jpg)
 
-![228 Peace Memorial in central Taipei.](synaptic-taipei-228-peace.jpg)
+![An overgrown ruin in Kampung Baru, Kuala Lumpur.](/img/photos/synaptic-klcc-overgrown.jpg)
 
-![A technicolor window in Jinguashi, New Taipei City.](synaptic-technicolor-window.jpg)
+![The view from Jinguashi, New Taipei City.](/img/photos/synaptic-jinguashi-vista.jpg)
 
-![An apartment block in Brickfields, Kuala Lumpur.](synaptic-brickfields-block.jpg)
+![228 Peace Memorial in central Taipei.](/img/photos/synaptic-taipei-228-peace.jpg)
 
-![A ripple frozen in time, Yehliu, New Taipei City.](synaptic-yehliu-ripple.jpg)
+![The haunted hotel at Nakagusuku, Okinawa.](/img/photos/synaptic-nakagusuku.jpg)
 
-![The pigeon palace in western Shilin district, Taipei.](synaptic-shezi-pigeon-palace.jpg)
+![An apartment block in Brickfields, Kuala Lumpur.](/img/photos/synaptic-brickfields-block.jpg)
 
-![Inside the Dulan sugar factory, Taitung county, Taiwan.](synaptic-dulan-sugar-factory.jpg)
+![A ripple frozen in time, Yehliu, New Taipei City.](/img/photos/synaptic-yehliu-ripple.jpg)
 
-![Moonrise over a city of constant change, Kuala Lumpur.](synaptic-kuala-lumpur-moonrise.jpg)
+![A pigeon palace in western Shilin district, Taipei.](/img/photos/synaptic-shezi-pigeon-palace.jpg)
 
-![The rocky shoreline south of the tip of Borneo in Sabah, Malaysia.](synaptic-kudat-rocky-shoreline.jpg)
+![Inside the Dulan sugar factory, Taitung county, Taiwan.](/img/photos/synaptic-dulan-sugar-factory.jpg)
 
-![Racing typhoon Usagi on the far shore of Pingtung county, Taiwan.](synaptic-typhoon-usagi.jpg)
+![Moonrise over a city of constant change, Kuala Lumpur.](/img/photos/synaptic-kuala-lumpur-moonrise.jpg)
 
-![Fading into the afterglow outside of Tuaran, Malaysia.](synaptic-tuaran-cemetery.jpg)
+![A technicolor window in Jinguashi, New Taipei City.](/img/photos/synaptic-technicolor-window.jpg)
 
-![The setting sun from the Maokong cable cars in Taipei.](synaptic-taipei-maokong-sunset.jpg)
+![The rocky shoreline south of the tip of Borneo in Sabah, Malaysia.](/img/photos/synaptic-kudat-rocky-shoreline.jpg)
+
+![Racing typhoon Usagi on the far shore of Pingtung county, Taiwan.](/img/photos/synaptic-typhoon-usagi.jpg)
+
+![The setting sun from the Maokong cable cars in Taipei.](/img/photos/synaptic-taipei-maokong-sunset.jpg)
 
 If you like what you see please follow me on [Flickr](https://secure.flickr.com/photos/synapticism/) or [Instagram](http://www.instagram.com/synapticx)!

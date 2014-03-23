@@ -3,11 +3,9 @@ title: Connect
 template: index.jade
 ---
 
-The best way to reach me is via email at [alexander@synapticism.com](mailto:alexander@synapticism.com).
+<img src="../biography/synaptic-tunnel-vision.jpg" class="alignright marginleft" title="Tunnel vision." alt="Tunnel vision." /> **The best way to reach me is to email me at [alexander@synapticism.com](mailto:alexander@synapticism.com).**
 
-My primary personal web presence is here at [alexandersynaptic.com](http://alexandersynaptic.com).
-
-I blog and maintain design, development, and photography portfolios at [Synapticism](http://synapticism.com).
+My primary personal web presence is here at [alexandersynaptic.com](http://alexandersynaptic.com). I have created this site to provide a broad level overview of who I am and what I do. I also blog and maintain design, development, and photography portfolios at [Synapticism](http://synapticism.com).
 
 You can also find me elsewhere on the web...
 

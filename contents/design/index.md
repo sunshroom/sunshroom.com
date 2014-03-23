@@ -9,18 +9,18 @@ From 1999 to 2007 I worked in the information technology industry as a front-end
 
 In this time I completed more than 50 album covers, most of which were produced for my record label, [Ektoplazm](http://www.ektoplazm.com/profiles/ektoplazm). The vast majority of these projects feature a "maximal" approach to design, often integrating [my own original photography](/photography/). Here are a few examples:
 
-![Globular - A Self-Fulfilling Prophecy](synaptic-globular-a-self-fulfilling-prophecy.jpg)
+![Globular - A Self-Fulfilling Prophecy](/img/design/synaptic-globular-a-self-fulfilling-prophecy.jpg)
 
-![Amygdala - Modus Operandi](synaptic-amygdala-modus-operandi.jpg)
+![Amygdala - Modus Operandi](/img/design/synaptic-amygdala-modus-operandi.jpg)
 
-![Jikkenteki - The Beginning Is At The End](synaptic-jikkenteki-the-beginning-is-at-the-end.jpg)
+![Jikkenteki - The Beginning Is At The End](/img/design/synaptic-jikkenteki-the-beginning-is-at-the-end.jpg)
 
-![Etnoscope - Way Over Deadline](synaptic-etnoscope-way-over-deadline.jpg)
+![Etnoscope - Way Over Deadline](/img/design/synaptic-etnoscope-way-over-deadline.jpg)
 
-![Highpersonic Whomen - Alternative Energysource](synaptic-highpersonic-whomen-alternative-energysource.jpg)
+![Highpersonic Whomen - Alternative Energysource](/img/design/synaptic-highpersonic-whomen-alternative-energysource.jpg)
 
-![Proton Kinoun - Apeiron](synaptic-proton-kinoun-apeiron.jpg)
+![Proton Kinoun - Apeiron](/img/design/synaptic-proton-kinoun-apeiron.jpg)
 
-![Hinkstep - Sunrise From The Treetops](synaptic-hinkstep-sunrise-from-the-treetops.jpg)
+![Hinkstep - Sunrise From The Treetops](/img/design/synaptic-hinkstep-sunrise-from-the-treetops.jpg)
 
 To see more of my design work please visit my [portfolio](http://synapticism.com/c/portfolio/design/).
