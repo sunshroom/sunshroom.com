@@ -1,10 +1,10 @@
 {
   "locals": {
-    "version": "1.1"
+    "version": "1.2"
   , "url": "alexandersynaptic.com"
   , "name": "Alexander Synaptic"
   , "email": "alexander@synapticism.com"
-  , "description": "The personal homepage of Alexander Synaptic focusing on design, development, photography, minimalism, music, and entrepreneurship."
+  , "description": "The personal homepage of Alexander Synaptic: design, development, photography, minimalism, music, and entrepreneurship."
   , "source": "https://github.com/synapticism/alexandersynaptic.com"
   , "menu": [
       {

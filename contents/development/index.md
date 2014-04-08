@@ -21,6 +21,14 @@ My most notable achievement is building a niche market music distribution platfo
 
 These days I am deeply engaged in redeveloping the site after completing [a successful crowdfunding campaign](http://www.indiegogo.com/ektoplazm-2012) in the summer of 2012.
 
+### <a name="pendrell"></a>Pendrell
+
+[Pendrell](https://github.com/synapticism/pendrell) is a minimalistic yet fully-featured WordPress theme meant for personal blogging and lifestreaming. You can see it in action on my blog, [Synapticism](http://synapticism.com).
+
+### <a name="ubik"></a>Ubik
+
+[Ubik](https://github.com/synapticism/ubik) is a handy set of tools for WordPress bundled as a plugin. It works behind the scenes to improve SEO, enrich content with semantic HTML5 markup, reduce bloat, and generally sharpen the end-user experience. Ubik also includes lightweight implementations of common custom taxonomies including post series and geotagging.
+
 ### <a name="homepage"></a>My homepage
 
 [This homepage](http://alexandersynaptic.com) is an experiment in using Wintersmith, a Node-based static site generator, to create a simple personal homepage. The best way to learn is to give yourself a project--so I took it upon myself to learn how to work with Node, Jade, Stylus, Grunt, Bower, and GitHub Pages to develop this web site. [View the source on GitHub](https://github.com/synapticism/alexandersynaptic.com).
@@ -31,20 +39,16 @@ While scaling Ektoplazm I switched from Apache to Nginx and went rather deep int
 
 ## Skills
 
-- CSS3
-- HTML5
-- Jade
-- JavaScript
-- MySQL
-- Nginx
-- Node
-- PHP
-- Stylus
-- Wintersmith
-- WordPress
+- Standards-compliant HTML5 markup
+- CSS3 preprocessing with Sass and Stylus
+- WordPress, PHP, and MySQL
+- Nginx and a pinch of Apache as needed
+- JavaScript and Node.js
+- Gulp and Grunt build process scripting
+- SEO and web site optimization
 
 ## For hire
 
-I am open to Node and WordPress-based freelance work to supplement my income. Please [contact me](/connect) to discuss the details.
+I am open to Node and WordPress-based freelance work to supplement my income. Please [contact me](/connect) to discuss the details of your project. Serious inquiries only.
 
-Find me on [GitHub](https://github.com/Synapticism) but don't treat it like my resume; I don't use GitHub for all my projects.
+For more about my development work you can find me on [GitHub](https://github.com/synapticism) (but don't treat it like my resume) or check out my [development log](http://synapticism.com/c/development).

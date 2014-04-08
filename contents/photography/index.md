@@ -3,7 +3,7 @@ title: Photography
 template: index.jade
 ---
 
-<img src="synaptic-ideal.jpg" class="alignright marginleft" title="Capturing the world I see." alt="Capturing the world I see." /> My insatiable curiosity and perpetual wanderlust compel me to explore this strange and fantastical world of ours in a deep and incisive way. With [my photography](http://synapticism.com/c/portfolio/photography/) I aim to share my adventures filtered through the lens of memory, as surreal and dreamlike imagery infused with a sense of [magic realism](https://en.wikipedia.org/wiki/Magic_realism).
+<img src="synaptic-ideal.jpg" class="alignright marginleft" title="Capturing the world I see." alt="Capturing the world I see." /> My insatiable curiosity and perpetual wanderlust compel me to explore this strange and fantastical world of ours in a deep and incisive way. With [my photography](http://synapticism.com/c/photography/) I aim to share my adventures filtered through the lens of memory, as surreal and dreamlike imagery infused with a sense of [magic realism](https://en.wikipedia.org/wiki/Magic_realism).
 
 I am endlessly fascinated by the secret lives of inanimate objects, the eerie solemnity of abandoned places, the desolate beauty of [manufactured landscapes](http://www.imdb.com/title/tt0832903/), and the wonders of remote and exotic locales. I am drawn to the visual rhythm of grit, grime, and decay and inspired by the majestic works of nature. I am especially interested in the juxtaposition and intersection of organic and artificial forms, particularly those places where nature is busily reclaiming manmade structures and objects. Most of all I am intent on exposing the hidden stories and forgotten fables all around us.
 
@@ -27,7 +27,7 @@ I make extensive use of Adobe Lightroom in my post-processing workflow. All of m
 
 All my properly geotagged photographs are available in full quality on my [Flickr photostream](https://secure.flickr.com/photos/synapticism/).
 
-I also publish [themed galleries of my work](http://synapticism.com/c/portfolio/photography/) on [my personal blog](http://synapticism.com).
+I also publish [themed galleries of my work](http://synapticism.com/c/photography/) on [my personal blog](http://synapticism.com).
 
 Find me on Facebook as [Synaptic Imagery](https://www.facebook.com/synaptic.imagery). I tend to post only the best of my work there.
 
@@ -75,4 +75,4 @@ Here are just a few examples of my recent work in Asia:
 
 ![The setting sun from the Maokong cable cars in Taipei.](/img/photos/synaptic-taipei-maokong-sunset.jpg)
 
-If you like what you see please follow me on [Flickr](https://secure.flickr.com/photos/synapticism/) or [Instagram](http://www.instagram.com/synapticx)!
+If you like what you see please follow me on [Flickr](https://secure.flickr.com/photos/synapticism/) or [Instagram](http://www.instagram.com/synapticx) or [visit my blog](http://synapticism.com)!
