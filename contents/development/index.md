@@ -3,7 +3,7 @@ title: Development
 template: index.jade
 ---
 
-I have been developing web sites since the late 1990s but only recently got serious about programming. Nowadays I am learning JavaScript, Node, and Angular with the lofty goal of becoming a full stack developer.
+I have been developing web sites since the late 1990s but only recently got serious about programming. Nowadays I am learning JavaScript, Node, and Angular to expand my capabilities.
 
 Prior to this I worked as a front-end developer and user interface designer from 1999 to 2007. I primarily worked with HTML, CSS, and various templating languages, seldom making any forays into server-side programming.
 
@@ -27,7 +27,7 @@ These days I am deeply engaged in redeveloping the site after completing [a succ
 
 ### <a name="ubik"></a>Ubik
 
-[Ubik](https://github.com/synapticism/ubik) is a handy set of tools for WordPress bundled as a plugin. It works behind the scenes to improve SEO, enrich content with semantic HTML5 markup, reduce bloat, and generally sharpen the end-user experience. Ubik also includes lightweight implementations of common custom taxonomies including post series and geotagging.
+[Ubik](https://github.com/synapticism/ubik) is a handy set of tools for WordPress bundled as a plugin. It works behind the scenes to improve SEO, enrich content with semantic HTML5 markup, reduce bloat, and generally sharpen the end-user experience. Ubik also includes lightweight implementations of common custom taxonomies including post series and places.
 
 ### <a name="homepage"></a>My homepage
 

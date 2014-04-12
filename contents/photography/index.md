@@ -3,7 +3,7 @@ title: Photography
 template: index.jade
 ---
 
-<img src="synaptic-ideal.jpg" class="alignright marginleft" title="Capturing the world I see." alt="Capturing the world I see." /> My insatiable curiosity and perpetual wanderlust compel me to explore this strange and fantastical world of ours in a deep and incisive way. With [my photography](http://synapticism.com/c/photography/) I aim to share my adventures filtered through the lens of memory, as surreal and dreamlike imagery infused with a sense of [magic realism](https://en.wikipedia.org/wiki/Magic_realism).
+<img src="synaptic-ideal.jpg" class="alignright marginleft" title="Capturing the world I see." alt="Capturing the world I see." /> My insatiable curiosity and perpetual wanderlust compel me to explore this strange and fantastical world of ours in a deep and incisive way. With [my photography](http://synapticimagery.com) I aim to share my adventures filtered through the lens of memory, as surreal and dreamlike imagery infused with a sense of [magic realism](https://en.wikipedia.org/wiki/Magic_realism).
 
 I am endlessly fascinated by the secret lives of inanimate objects, the eerie solemnity of abandoned places, the desolate beauty of [manufactured landscapes](http://www.imdb.com/title/tt0832903/), and the wonders of remote and exotic locales. I am drawn to the visual rhythm of grit, grime, and decay and inspired by the majestic works of nature. I am especially interested in the juxtaposition and intersection of organic and artificial forms, particularly those places where nature is busily reclaiming manmade structures and objects. Most of all I am intent on exposing the hidden stories and forgotten fables all around us.
 
@@ -25,11 +25,11 @@ I make extensive use of Adobe Lightroom in my post-processing workflow. All of m
 
 ## Connect
 
+My primary photography portfolio can be found at [Synaptic Imagery](http://synapticimagery.com). I also have a [Facebook page for Synaptic Imagery](https://www.facebook.com/synaptic.imagery).
+
+I also publish [themed galleries of my work](http://synapticism.com/c/photography/) and [other images that interest me](http://synapticism.com/type/image/) on [my personal blog](http://synapticism.com).
+
 All my properly geotagged photographs are available in full quality on my [Flickr photostream](https://secure.flickr.com/photos/synapticism/).
-
-I also publish [themed galleries of my work](http://synapticism.com/c/photography/) on [my personal blog](http://synapticism.com).
-
-Find me on Facebook as [Synaptic Imagery](https://www.facebook.com/synaptic.imagery). I tend to post only the best of my work there.
 
 Follow me on [Instagram](http://www.instagram.com/synapticx) for a more immediate and far less serious glimpse into my life. I use Instagram for fun, to tell stories, and to be weird; don't expect me to be making art over there.
 
@@ -47,13 +47,9 @@ Here are just a few examples of my recent work in Asia:
 
 ![Keelung islet from the northern shore of Taiwan.](/img/photos/synaptic-keelung-islet.jpg)
 
-![Sand dunes along the Pacific shoreline in Pingtung county, Taiwan.](/img/photos/synaptic-pingtung-sand-dunes.jpg)
-
 ![An overgrown ruin in Kampung Baru, Kuala Lumpur.](/img/photos/synaptic-klcc-overgrown.jpg)
 
 ![The view from Jinguashi, New Taipei City.](/img/photos/synaptic-jinguashi-vista.jpg)
-
-![228 Peace Memorial in central Taipei.](/img/photos/synaptic-taipei-228-peace.jpg)
 
 ![The haunted hotel at Nakagusuku, Okinawa.](/img/photos/synaptic-nakagusuku.jpg)
 
@@ -61,11 +57,7 @@ Here are just a few examples of my recent work in Asia:
 
 ![A ripple frozen in time, Yehliu, New Taipei City.](/img/photos/synaptic-yehliu-ripple.jpg)
 
-![A pigeon palace in western Shilin district, Taipei.](/img/photos/synaptic-shezi-pigeon-palace.jpg)
-
 ![Inside the Dulan sugar factory, Taitung county, Taiwan.](/img/photos/synaptic-dulan-sugar-factory.jpg)
-
-![Moonrise over a city of constant change, Kuala Lumpur.](/img/photos/synaptic-kuala-lumpur-moonrise.jpg)
 
 ![A technicolor window in Jinguashi, New Taipei City.](/img/photos/synaptic-technicolor-window.jpg)
 
@@ -75,4 +67,5 @@ Here are just a few examples of my recent work in Asia:
 
 ![The setting sun from the Maokong cable cars in Taipei.](/img/photos/synaptic-taipei-maokong-sunset.jpg)
 
-If you like what you see please follow me on [Flickr](https://secure.flickr.com/photos/synapticism/) or [Instagram](http://www.instagram.com/synapticx) or [visit my blog](http://synapticism.com)!
+If you like what you see please visit my portfolio site [Synaptic Imagery](http://synapticimagery.com) or my blog [Synapticism](http://synapticism.com). You can also follow my photography on [Flickr](https://secure.flickr.com/photos/synapticism/), [Instagram](http://www.instagram.com/synapticx), or [Facebook](https://www.facebook.com/synaptic.imagery).
+
