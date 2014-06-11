@@ -9,7 +9,7 @@ Prior to this I worked as a front-end developer and user interface designer from
 
 In the middle of the 2000s I discovered [WordPress](http://wordpress.org) and began to teach myself PHP and MySQL on my own time. With my newfound skills I built a niche market [music distribution platform](#ektoplazm). I left the corporate world for higher education but continued to work on my own projects, learning new skills as I went along, particularly when scaling my web site with [Nginx](#nginx).
 
-After [graduating from university in 2011](/biography#education) my interest in web technology was rekindled and I began the long process of updating my skills and workflow for the new decade.
+After [graduating from university in 2011](/biography#education) my interest in web technology was rekindled and I began updating my skills and workflow for the new decade.
 
 ## Projects
 
@@ -31,7 +31,7 @@ These days I am deeply engaged in redeveloping the site after completing [a succ
 
 ### <a name="homepage"></a>My homepage
 
-[This homepage](http://alexandersynaptic.com) is an experiment in using Wintersmith, a Node-based static site generator, to create a simple personal homepage. The best way to learn is to give yourself a project--so I took it upon myself to learn how to work with Node, Jade, Stylus, Grunt, Bower, and GitHub Pages to develop this web site. [View the source on GitHub](https://github.com/synapticism/alexandersynaptic.com).
+[This homepage](http://alexandersynaptic.com) is an experiment in using Wintersmith, a Node-based static site generator, to create a simple personal nameplate site. The best way to learn is to give yourself a project--so I took it upon myself to learn how to work with Node, Jade, Stylus, Grunt, Bower, and GitHub Pages to develop this web site. [View the source on GitHub](https://github.com/synapticism/alexandersynaptic.com).
 
 ### <a name="nginx"></a>Nginx configuration files
 
@@ -39,16 +39,15 @@ While scaling Ektoplazm I switched from Apache to Nginx and went rather deep int
 
 ## Skills
 
-- Standards-compliant HTML5 markup
-- CSS3 preprocessing with Sass and Stylus
-- WordPress, PHP, and MySQL
-- Nginx and a pinch of Apache as needed
-- JavaScript and Node.js
-- Gulp and Grunt build process scripting
-- SEO and web site optimization
+* Graphic design in Photoshop, Illustrator, and Lightroom
+* HTML5, CSS3 (with Sass/SCSS), JavaScript, PHP, and MySQL
+* WordPress development: [theme](https://github.com/synapticism/pendrell) and [plugin](https://github.com/synapticism/ubik) authoring, [configuration](https://github.com/synapticism/wp-config-x), performance tuning, and search engine optimization
+* [Nginx configuration](https://github.com/synapticism/nginx-config) and optimization; a pinch of Apache as needed
+* [Gulp](https://github.com/synapticism/pendrell/blob/master/gulpfile.js) and Grunt-based build processes
+* Node.js and Angular (learning)
 
 ## For hire
 
-I am open to Node and WordPress-based freelance work to supplement my income. Please [contact me](/connect) to discuss the details of your project. Serious inquiries only.
+I am open to Node and WordPress-based freelance work. Please [contact me](/connect) to discuss the details of your project. Serious inquiries only!
 
 For more about my development work you can find me on [GitHub](https://github.com/synapticism) (but don't treat it like my resume) or check out my [development log](http://synapticism.com/c/development).

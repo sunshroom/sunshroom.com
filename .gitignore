@@ -1,51 +1,26 @@
-# Compiled source #
-###################
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
-
-# Packages #
-############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.tar
-
-# Logs and databases #
-######################
+## General
+.cvs
+.htaccess
+.svn
+*.bak
 *.log
-*.sql
-*.sqlite
+*.swp
 
-# OS generated files #
-######################
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-Icon?
-ehthumbs.db
+## Windows
+Desktop.ini
 Thumbs.db
 
-# Node #
-########
-node_modules
-bower_components
+## Mac
+.DS_Store
 
-# Project Specific #
-####################
+## Development
+bower_components
+node_modules
+
+## Project specific
 contents/img/backgrounds/
 contents/projects/
 build/
 .grunt/
 test.html
 draft.md
-
