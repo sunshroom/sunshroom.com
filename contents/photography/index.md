@@ -27,7 +27,7 @@ I make extensive use of Adobe Lightroom in my post-processing workflow. All of m
 
 My primary photography portfolio can be found at [Synaptic Imagery](http://synapticimagery.com). I also have a [Facebook page for Synaptic Imagery](https://www.facebook.com/synaptic.imagery).
 
-I also publish [themed galleries of my work](http://synapticism.com/c/photography/) and [other images that interest me](http://synapticism.com/type/image/) on [my personal blog](http://synapticism.com).
+I also publish [themed galleries of my work](http://synapticism.com/tag/photography/) and [other images that interest me](http://synapticism.com/type/image/) on [my personal blog](http://synapticism.com).
 
 All my properly geotagged photographs are available in full quality on my [Flickr photostream](https://secure.flickr.com/photos/synapticism/).
 
@@ -67,5 +67,5 @@ Here are just a few examples of my recent work in Asia:
 
 ![The setting sun from the Maokong cable cars in Taipei.](/img/photos/synaptic-taipei-maokong-sunset.jpg)
 
-If you like what you see please visit my portfolio site [Synaptic Imagery](http://synapticimagery.com) or my blog [Synapticism](http://synapticism.com). You can also follow my photography on [Flickr](https://secure.flickr.com/photos/synapticism/), [Instagram](http://www.instagram.com/synapticx), or [Facebook](https://www.facebook.com/synaptic.imagery).
+If you like what you see please visit my portfolio site [Synaptic Imagery](http://synapticimagery.com) or my blog [Synapticism](http://synapticism.com/tag/photography). You can also follow my photography on [Flickr](https://secure.flickr.com/photos/synapticism/), [Instagram](http://www.instagram.com/synapticx), or [Facebook](https://www.facebook.com/synaptic.imagery).
 

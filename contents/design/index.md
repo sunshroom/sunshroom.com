@@ -23,4 +23,4 @@ In this time I completed more than 50 album covers, most of which were produced 
 
 ![Hinkstep - Sunrise From The Treetops](/img/design/synaptic-hinkstep-sunrise-from-the-treetops.jpg)
 
-To see more of my design work please [visit my blog](http://synapticism.com/c/design/).
+To see more of my design work please [visit my blog](http://synapticism.com/tag/design/).

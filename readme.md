@@ -1,4 +1,4 @@
-# A Synaptic Homepage
+# alexandersynaptic.com
 
 An experiment in using [Wintersmith](https://github.com/jnordberg/wintersmith), a Node-based static site generator, to create a simple personal homepage hosted on GitHub Pages at [alexandersynaptic.com](http://alexandersynaptic.com).
 
@@ -22,10 +22,6 @@ Grunt handles automated deployment to GitHub Pages at [alexandersynaptic.com](ht
 
 - [Backstretch](https://github.com/srobbin/jquery-backstretch): drop any number of images into `contents/img/photos` and tweak the relevant settings in `config.json` to control the background image slideshow. If no images exist the slideshow functionality will be disabled.
 - [Baseline](https://github.com/daneden/Baseline.js): dynamically alters image margins to preserve vertical rhythm.
-
-## Issues
-
-- The vertical rhythm isn't perfect; because it is based on proportional units things can get a little buggy when nesting scaled elements. There are a few imperfect hacks to get around this (read comments in the source).
 
 ## Credits
 

@@ -7,7 +7,7 @@ template: index.jade
 
 My primary personal web presence is here at [alexandersynaptic.com](http://alexandersynaptic.com). I have created this site to provide a broad-level overview of who I am and what I do.
 
-I also blog and maintain [design](http://synapticism.com/c/design), [development](http://synapticism.com/c/development), and [photography](http://synapticism.com/c/photography) portfolios at [Synapticism](http://synapticism.com).
+I also blog and maintain [design](http://synapticism.com/c/design), [development](http://synapticism.com/tag/development), and [photography](http://synapticism.com/tag/photography) portfolios at [Synapticism](http://synapticism.com).
 
 In 2014 I opened [Synaptic Imagery](http://synapticimagery.com), a professional photography portfolio. Check it out to see a curated selection of some of my finest work.
 

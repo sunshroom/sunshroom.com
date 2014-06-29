@@ -46,7 +46,7 @@ I am a self-taught designer with more than 15 years of experience in the graphic
 
 ## <a name="development"></a>Development
 
-I am a [front-end developer](/development) with more than a decade of experience with many different technology stacks. I have worked mainly with [WordPress](http://synapticism.com/t/wordpress/), PHP, and MySQL, but in the last few years I have been branching out. I am fluent in [HTML5](http://synapticism.com/t/html5/) and employ Sass/SCSS in Gulp/Grunt build processes to generate CSS3. [Nginx](http://synapticism.com/t/nginx/) is my web server of choice. Nowadays I am learning Node.js and advanced JavaScript, exploring Angular, and playing with Wintersmith, Jade, and Stylus. I also develop custom [Adobe Lightroom](http://synapticism.com/t/lightroom/) presets. You can [find me on GitHub](http://www.github.com/synapticism).
+I am a [front-end developer](/development) with more than a decade of experience with many different technology stacks. I have worked mainly with [WordPress](http://synapticism.com/tag/wordpress/), PHP, and MySQL, but in the last few years I have been branching out. I am fluent in [HTML5](http://synapticism.com/tag/html5/) and employ Sass/SCSS in Gulp/Grunt build processes to generate CSS3. [Nginx](http://synapticism.com/tag/nginx/) is my web server of choice. Nowadays I am learning Node.js and advanced JavaScript, exploring Angular, and playing with Wintersmith, Jade, and Stylus. I also develop custom [Adobe Lightroom](http://synapticism.com/tag/lightroom/) presets. You can [find me on GitHub](http://www.github.com/synapticism).
 
 ## <a name="minimalism"></a>Minimalism
 
