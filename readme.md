@@ -1,4 +1,4 @@
-# alexandersynaptic.com
+# sunshroom.com
 
 An experiment in using [Wintersmith](https://github.com/jnordberg/wintersmith), a Node-based static site generator, to create a simple personal homepage hosted on GitHub Pages at [sunshroom.com](http://sunshroom.com).
 
