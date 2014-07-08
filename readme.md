@@ -1,6 +1,6 @@
 # alexandersynaptic.com
 
-An experiment in using [Wintersmith](https://github.com/jnordberg/wintersmith), a Node-based static site generator, to create a simple personal homepage hosted on GitHub Pages at [alexandersynaptic.com](http://alexandersynaptic.com).
+An experiment in using [Wintersmith](https://github.com/jnordberg/wintersmith), a Node-based static site generator, to create a simple personal homepage hosted on GitHub Pages at [sunshroom.com](http://sunshroom.com).
 
 ## Installation
 
@@ -16,7 +16,7 @@ A preview server is available at `localhost:8088` by running `grunt preview` fro
 
 ## Deployment
 
-Grunt handles automated deployment to GitHub Pages at [alexandersynaptic.com](http://alexandersynaptic.com) using `grunt deploy`. Hack this to suit your own needs.
+Grunt handles automated deployment to GitHub Pages at [sunshroom.com](http://sunshroom.com) using `grunt deploy`. Hack this to suit your own needs.
 
 ## Plugins
 
@@ -37,4 +37,4 @@ Not all of these projects are in use but all were interesting to explore and ins
 
 ## License
 
-Since this is my personal homepage the `contents` folder is under copyright control. The code itself is released under the GPL however. Feel free to copy and reuse anything that isn't uniquely mine. My photos (those that don't feature my likeness in the photo at least) are released under a Creative Commons license and may be reused under the terms of use specified on [my homepage](http://alexandersynaptic.com).
+Since this is my personal homepage the `contents` folder is under copyright control. The code itself is released under the GPL however. Feel free to copy and reuse anything that isn't uniquely mine. My photos (those that don't feature my likeness in the photo at least) are released under a Creative Commons license and may be reused under the terms of use specified on [my homepage](http://sunshroom.com).
